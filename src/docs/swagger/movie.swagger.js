@@ -96,42 +96,16 @@
  *           type: string
  *           example: releaseDate:desc
  *         description: Sort field and order (e.g. releaseDate:desc)
+ *       - in: query
+ *         name: q
+ *         schema:
+ *           type: string
+ *         description: Search term — matches title, actors, or genre (case-insensitive)
  *     responses:
  *       "200":
  *         description: Paginated list of movies
  *       "400":
  *         description: Validation failed
- */
-
-/**
- * @swagger
- * /movies/search:
- *   get:
- *     summary: Search movies by title, actor, or genre
- *     tags: [Movies]
- *     security: []
- *     parameters:
- *       - in: query
- *         name: q
- *         required: true
- *         schema:
- *           type: string
- *         description: Search query
- *       - in: query
- *         name: page
- *         schema:
- *           type: integer
- *           default: 1
- *       - in: query
- *         name: limit
- *         schema:
- *           type: integer
- *           default: 10
- *     responses:
- *       "200":
- *         description: Search results
- *       "400":
- *         description: Validation failed (q is required)
  */
 
 /**

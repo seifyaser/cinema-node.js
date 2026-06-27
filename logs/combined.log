@@ -1,0 +1,129 @@
+[2026-06-27T20:42:46.187Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T20:42:46.191Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T20:42:46.257Z] INFO: MongoDB connected successfully
+[2026-06-27T20:43:00.806Z] ERROR: [POST] /api/v1/auth/register >> Cannot set property query of #<IncomingMessage> which has only a getter
+TypeError: Cannot set property query of #<IncomingMessage> which has only a getter
+    at D:\node.js\cinema\node_modules\express-mongo-sanitize\index.js:113:18
+    at Array.forEach (<anonymous>)
+    at D:\node.js\cinema\node_modules\express-mongo-sanitize\index.js:110:44
+    at Layer.handleRequest (D:\node.js\cinema\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\node.js\cinema\node_modules\router\index.js:342:13)
+    at D:\node.js\cinema\node_modules\router\index.js:297:9
+    at processParams (D:\node.js\cinema\node_modules\router\index.js:582:12)
+    at next (D:\node.js\cinema\node_modules\router\index.js:291:5)
+    at read (D:\node.js\cinema\node_modules\body-parser\lib\read.js:42:5)
+    at urlencodedParser (D:\node.js\cinema\node_modules\body-parser\lib\types\urlencoded.js:51:5)
+[2026-06-27T20:43:51.923Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T20:43:51.926Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T20:43:51.966Z] INFO: MongoDB connected successfully
+[2026-06-27T20:43:53.744Z] INFO: [POST] /api/v1/auth/register
+[2026-06-27T20:43:54.195Z] ERROR: [POST] /api/v1/auth/register >> next is not a function
+TypeError: next is not a function
+    at model.<anonymous> (D:\node.js\cinema\src\models\User.js:54:3)
+    at async Kareem.execPre (D:\node.js\cinema\node_modules\kareem\index.js:61:24)
+    at async model.$__save (D:\node.js\cinema\node_modules\mongoose\lib\model.js:403:5)
+    at async maybeTracedSave (D:\node.js\cinema\node_modules\mongoose\lib\model.js:675:7)
+    at async Function.create (D:\node.js\cinema\node_modules\mongoose\lib\model.js:2763:5)
+    at async Object.registerUser (D:\node.js\cinema\src\services\auth.service.js:7:16)
+    at async D:\node.js\cinema\src\controllers\auth.controller.js:7:27
+[2026-06-27T20:44:29.482Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T20:44:29.484Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T20:44:29.515Z] INFO: MongoDB connected successfully
+[2026-06-27T20:44:33.694Z] INFO: [POST] /api/v1/auth/register
+[2026-06-27T20:44:34.153Z] INFO: User registered successfully: test3@example.com
+[2026-06-27T20:44:34.188Z] INFO: [POST] /api/v1/auth/login
+[2026-06-27T20:44:34.616Z] INFO: User logged in successfully: test3@example.com
+[2026-06-27T20:44:34.622Z] INFO: [GET] /api/v1/auth/me
+[2026-06-27T21:13:25.036Z] INFO: [GET] /api-docs
+[2026-06-27T21:13:25.050Z] INFO: [GET] /api-docs/
+[2026-06-27T21:13:25.160Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-27T21:13:25.165Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-27T21:13:25.167Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-27T21:13:25.169Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-27T21:13:25.885Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-27T21:13:31.366Z] INFO: [GET] /api/v1/auth/me
+[2026-06-27T21:17:09.895Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:17:09.897Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:17:09.930Z] INFO: MongoDB connected successfully
+[2026-06-27T21:17:35.387Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:17:35.389Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:17:35.429Z] INFO: MongoDB connected successfully
+[2026-06-27T21:18:02.192Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:18:02.195Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:18:02.225Z] INFO: MongoDB connected successfully
+[2026-06-27T21:18:33.865Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:18:33.868Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:18:33.899Z] INFO: MongoDB connected successfully
+[2026-06-27T21:18:42.634Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:18:42.636Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:18:42.669Z] INFO: MongoDB connected successfully
+[2026-06-27T21:19:01.324Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:19:01.321Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:19:01.364Z] INFO: MongoDB connected successfully
+[2026-06-27T21:19:15.824Z] INFO: [POST] /api/v1/auth/login
+[2026-06-27T21:19:16.256Z] INFO: User logged in successfully: test3@example.com
+[2026-06-27T21:19:16.288Z] INFO: [POST] /api/v1/movies
+[2026-06-27T21:19:16.304Z] INFO: [GET] /api/v1/movies
+[2026-06-27T21:19:16.349Z] INFO: [GET] /api/v1/movies/search?q=avatar
+[2026-06-27T21:19:16.388Z] INFO: [GET] /api/v1/movies/search
+[2026-06-27T21:19:16.397Z] INFO: [GET] /api/v1/movies/000000000000000000000000
+[2026-06-27T21:20:02.987Z] INFO: [POST] /api/v1/auth/login
+[2026-06-27T21:20:03.408Z] INFO: User logged in successfully: admin@cinema.com
+[2026-06-27T21:20:03.442Z] INFO: [POST] /api/v1/movies
+[2026-06-27T21:20:03.508Z] INFO: [Admin] Movie created: "Avengers: Infinity War" (6a403e83a1132d31ccd883dc)
+[2026-06-27T21:20:03.517Z] INFO: [POST] /api/v1/movies
+[2026-06-27T21:20:03.532Z] INFO: [Admin] Movie created: "Black Panther 2" (6a403e83a1132d31ccd883dd)
+[2026-06-27T21:20:03.539Z] INFO: [GET] /api/v1/movies
+[2026-06-27T21:20:03.554Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-06-27T21:20:03.569Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-06-27T21:20:03.581Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dc
+[2026-06-27T21:20:03.589Z] INFO: [GET] /api/v1/movies/search?q=avengers
+[2026-06-27T21:20:03.602Z] INFO: [GET] /api/v1/movies/search?q=Robert+Downey
+[2026-06-27T21:20:03.615Z] INFO: [PUT] /api/v1/movies/6a403e83a1132d31ccd883dc
+[2026-06-27T21:20:03.639Z] INFO: [Admin] Movie updated: "Avengers: Infinity War" (6a403e83a1132d31ccd883dc)
+[2026-06-27T21:20:03.645Z] INFO: [DELETE] /api/v1/movies/6a403e83a1132d31ccd883dc
+[2026-06-27T21:20:03.659Z] INFO: [Admin] Movie soft-deleted: 6a403e83a1132d31ccd883dc
+[2026-06-27T21:20:03.662Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dc
+[2026-06-27T21:20:03.669Z] INFO: [POST] /api/v1/movies
+[2026-06-27T21:24:17.901Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:24:17.904Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:24:17.948Z] INFO: MongoDB connected successfully
+[2026-06-27T21:24:35.878Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:24:35.882Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:24:35.924Z] INFO: MongoDB connected successfully
+[2026-06-27T21:25:00.596Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:25:00.600Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:25:00.645Z] INFO: MongoDB connected successfully
+[2026-06-27T21:25:23.035Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:25:23.038Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:25:23.083Z] INFO: MongoDB connected successfully
+[2026-06-27T21:25:33.309Z] INFO: [GET] /api/v1/movies
+[2026-06-27T21:25:33.423Z] INFO: [GET] /api/v1/movies?q=black
+[2026-06-27T21:25:33.443Z] INFO: [GET] /api/v1/movies?q=Wright
+[2026-06-27T21:25:33.457Z] INFO: [GET] /api/v1/movies?q=Action
+[2026-06-27T21:25:33.472Z] INFO: [GET] /api/v1/movies?q=black&status=coming_soon
+[2026-06-27T21:25:33.489Z] INFO: [GET] /api/v1/movies/search
+[2026-06-27T21:25:33.495Z] ERROR: [GET] /api/v1/movies/search >> Cast to ObjectId failed for value "search" (type string) at path "_id" for model "Movie"
+CastError: Cast to ObjectId failed for value "search" (type string) at path "_id" for model "Movie"
+    at SchemaObjectId.cast (D:\node.js\cinema\node_modules\mongoose\lib\schema\objectId.js:252:11)
+    at SchemaType.applySetters (D:\node.js\cinema\node_modules\mongoose\lib\schemaType.js:1373:12)
+    at SchemaType.castForQuery (D:\node.js\cinema\node_modules\mongoose\lib\schemaType.js:1793:17)
+    at cast (D:\node.js\cinema\node_modules\mongoose\lib\cast.js:386:32)
+    at Query.cast (D:\node.js\cinema\node_modules\mongoose\lib\query.js:5228:12)
+    at Query._castConditions (D:\node.js\cinema\node_modules\mongoose\lib\query.js:2411:10)
+    at model.Query._findOne (D:\node.js\cinema\node_modules\mongoose\lib\query.js:2758:8)
+    at maybeTracedQueryExec (D:\node.js\cinema\node_modules\mongoose\lib\query.js:4801:83)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Object.getMovieById (D:\node.js\cinema\src\services\movie.service.js:85:17)
+[2026-06-27T21:25:50.041Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:25:50.044Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:25:50.080Z] INFO: MongoDB connected successfully
+[2026-06-27T21:25:55.905Z] INFO: [GET] /api/v1/movies/search
+[2026-06-27T21:25:55.953Z] INFO: [GET] /api/v1/movies?q=black
+[2026-06-27T21:26:28.170Z] INFO: [GET] /api-docs/
+[2026-06-27T21:26:28.247Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-27T21:26:28.249Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-27T21:26:28.255Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-27T21:26:28.259Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-27T21:26:28.896Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-27T21:26:34.720Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc

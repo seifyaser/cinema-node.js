@@ -9,14 +9,6 @@ const ROLES = require('../constants/roles');
 const router = express.Router();
 
 // ─── Public Routes ─────────────────────────────────────────────────────────
-// NOTE: /search must be declared BEFORE /:id — otherwise "search" is treated as the id param
-
-router.get(
-  '/search',
-  validate(movieValidation.searchMovies),
-  movieController.searchMovies
-);
-
 router.get(
   '/',
   validate(movieValidation.getMovies),

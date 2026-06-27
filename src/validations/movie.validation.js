@@ -51,14 +51,7 @@ const getMovies = {
       .optional(),
     genre: Joi.string().optional(),
     sort: Joi.string().optional(), // e.g. "releaseDate:desc"
-  }),
-};
-
-const searchMovies = {
-  query: Joi.object().keys({
-    q: Joi.string().trim().min(1).required(),
-    page: Joi.number().integer().min(1).default(1),
-    limit: Joi.number().integer().min(1).max(100).default(10),
+    q: Joi.string().trim().optional(), // search by title, actor, or genre
   }),
 };
 
@@ -66,5 +59,4 @@ module.exports = {
   createMovie,
   updateMovie,
   getMovies,
-  searchMovies,
 };
