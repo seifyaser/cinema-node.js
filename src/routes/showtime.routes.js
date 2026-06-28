@@ -1,5 +1,6 @@
 const express = require('express');
 const showtimeController = require('../controllers/showtime.controller');
+const bookingController = require('../controllers/booking.controller');
 const showtimeValidation = require('../validations/showtime.validation');
 const validate = require('../middlewares/validate.middleware');
 const authMiddleware = require('../middlewares/auth.middleware');
@@ -9,7 +10,9 @@ const ROLES = require('../constants/roles');
 const router = express.Router();
 
 // ─── Public Routes ─────────────────────────────────────────────────────────
+// NOTE: /:id/seats must be declared BEFORE /:id to avoid param collision
 
+router.get('/:id/seats', bookingController.getSeatMap);
 router.get('/:id', showtimeController.getShowtimeById);
 
 // ─── Admin Routes ──────────────────────────────────────────────────────────

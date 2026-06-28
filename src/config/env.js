@@ -9,6 +9,8 @@ const envSchema = Joi.object({
   MONGODB_URI: Joi.string().required().description('MongoDB connection string'),
   JWT_SECRET: Joi.string().required().description('JWT secret key'),
   JWT_EXPIRES_IN: Joi.string().default('7d').description('JWT expiration time'),
+  MAX_BOOKING_SEATS: Joi.number().integer().min(1).default(10).description('Maximum seats per booking'),
+  HOLD_DURATION_MINUTES: Joi.number().integer().min(1).default(5).description('Seat hold duration in minutes'),
 }).unknown();
 
 const { value: envVars, error } = envSchema.validate(process.env);
@@ -26,5 +28,9 @@ module.exports = {
   jwt: {
     secret: envVars.JWT_SECRET,
     expiresIn: envVars.JWT_EXPIRES_IN,
+  },
+  booking: {
+    maxSeats: envVars.MAX_BOOKING_SEATS,
+    holdDurationMinutes: envVars.HOLD_DURATION_MINUTES,
   },
 };
