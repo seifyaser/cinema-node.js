@@ -45,21 +45,13 @@ const deleteMovie = async (id) => {
  * Get all active movies with pagination, filtering, and sorting
  */
 const getAllMovies = async (query) => {
-  const { page, limit, status, genre, sort, q } = query;
+  const { page, limit, status, genre, sort } = query;
   const { skip, limit: parsedLimit, page: parsedPage } = getPagination(page, limit);
 
   // Only return active movies — business rule
   const filter = { isActive: true };
   if (status) filter.status = status;
   if (genre) filter.genre = { $in: [genre] };
-  if (q) {
-    // Case-insensitive search across title, actors, and genre
-    filter.$or = [
-      { title: { $regex: q, $options: 'i' } },
-      { actors: { $regex: q, $options: 'i' } },
-      { genre: { $regex: q, $options: 'i' } },
-    ];
-  }
 
   // Build sort options — default to releaseDate descending
   const sortOptions = {};
@@ -91,10 +83,35 @@ const getMovieById = async (id) => {
   return movie;
 };
 
+/**
+ * Search active movies by title or actor name — case-insensitive
+ */
+const searchMovies = async (query) => {
+  const { q, page, limit } = query;
+  const { skip, limit: parsedLimit, page: parsedPage } = getPagination(page, limit);
+
+  const filter = {
+    isActive: true,
+    $or: [
+      { title: { $regex: q, $options: 'i' } },
+      { actors: { $regex: q, $options: 'i' } },
+      { genre: { $regex: q, $options: 'i' } },
+    ],
+  };
+
+  const [movies, total] = await Promise.all([
+    Movie.find(filter).sort({ releaseDate: -1 }).skip(skip).limit(parsedLimit),
+    Movie.countDocuments(filter),
+  ]);
+
+  return { movies, pagination: getPaginationMeta(total, parsedPage, parsedLimit) };
+};
+
 module.exports = {
   createMovie,
   updateMovie,
   deleteMovie,
   getAllMovies,
   getMovieById,
+  searchMovies,
 };

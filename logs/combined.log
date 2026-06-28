@@ -127,3 +127,68 @@ CastError: Cast to ObjectId failed for value "search" (type string) at path "_id
 [2026-06-27T21:26:28.259Z] INFO: [GET] /api-docs/swagger-ui-init.js
 [2026-06-27T21:26:28.896Z] INFO: [GET] /api-docs/favicon-32x32.png
 [2026-06-27T21:26:34.720Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-06-27T21:30:52.224Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:30:52.226Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:30:52.257Z] INFO: MongoDB connected successfully
+[2026-06-27T21:31:05.861Z] INFO: [GET] /api-docs/
+[2026-06-27T21:31:05.977Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-27T21:31:06.000Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-27T21:31:06.005Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-27T21:31:06.006Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-27T21:31:06.464Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-27T21:31:16.703Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-06-27T21:33:53.856Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:33:53.858Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:33:53.896Z] INFO: MongoDB connected successfully
+[2026-06-27T21:34:01.259Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:34:01.262Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:34:01.304Z] INFO: MongoDB connected successfully
+[2026-06-27T21:34:23.150Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:34:23.153Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:34:23.179Z] INFO: MongoDB connected successfully
+[2026-06-27T21:34:57.700Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:34:57.702Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:34:57.741Z] INFO: MongoDB connected successfully
+[2026-06-27T21:35:14.489Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:35:14.492Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:35:14.525Z] INFO: MongoDB connected successfully
+[2026-06-27T21:35:26.490Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:35:26.495Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:35:26.563Z] INFO: MongoDB connected successfully
+[2026-06-27T21:35:48.867Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:35:48.870Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:35:48.915Z] INFO: MongoDB connected successfully
+[2026-06-27T21:36:21.037Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:36:21.041Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:36:21.093Z] INFO: MongoDB connected successfully
+[2026-06-27T21:36:30.001Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:36:30.004Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:36:30.052Z] INFO: MongoDB connected successfully
+[2026-06-27T21:36:50.821Z] INFO: [POST] /api/v1/auth/login
+[2026-06-27T21:36:51.273Z] INFO: User logged in successfully: admin@cinema.com
+[2026-06-27T21:36:51.305Z] INFO: [POST] /api/v1/halls
+[2026-06-27T21:36:51.391Z] INFO: Generated 150 seats for hall: "Hall 1"
+[2026-06-27T21:36:51.392Z] INFO: [Admin] Hall created: "Hall 1" (6a4042734b73da86700de587)
+[2026-06-27T21:36:51.402Z] INFO: [GET] /api/v1/halls
+[2026-06-27T21:36:51.419Z] INFO: [GET] /api/v1/halls/6a4042734b73da86700de587
+[2026-06-27T21:36:51.431Z] INFO: [GET] /api/v1/halls/6a4042734b73da86700de587/seats
+[2026-06-27T21:36:51.483Z] INFO: [POST] /api/v1/halls
+[2026-06-27T21:36:51.509Z] INFO: [POST] /api/v1/halls
+[2026-06-27T21:36:51.536Z] INFO: Generated 50 seats for hall: "VIP Hall"
+[2026-06-27T21:36:51.536Z] INFO: [Admin] Hall created: "VIP Hall" (6a4042734b73da86700de61f)
+[2026-06-27T21:36:51.546Z] INFO: [GET] /api/v1/halls/6a4042734b73da86700de61f/seats
+[2026-06-27T21:36:51.583Z] INFO: [PUT] /api/v1/halls/6a4042734b73da86700de587
+[2026-06-27T21:36:51.600Z] INFO: [Admin] Hall updated: "Main Hall" (6a4042734b73da86700de587)
+[2026-06-27T21:36:51.611Z] INFO: [DELETE] /api/v1/halls/6a4042734b73da86700de587
+[2026-06-27T21:36:51.626Z] INFO: [Admin] Hall soft-deleted: 6a4042734b73da86700de587
+[2026-06-27T21:36:51.632Z] INFO: [GET] /api/v1/halls/6a4042734b73da86700de587
+[2026-06-27T21:36:51.642Z] INFO: [GET] /api/v1/halls
+[2026-06-27T21:39:18.883Z] INFO: [GET] /api-docs/
+[2026-06-27T21:39:18.961Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-27T21:39:18.966Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-27T21:39:18.967Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-27T21:39:18.968Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-27T21:39:19.572Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-27T21:43:17.677Z] INFO: Server is running on port 3000 in development mode
+[2026-06-27T21:43:17.680Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-27T21:43:17.722Z] INFO: MongoDB connected successfully

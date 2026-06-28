@@ -16,12 +16,6 @@ const errorHandler = (err, req, res, next) => {
     }));
   }
 
-  // Mongoose CastError — invalid ObjectId
-  if (err.name === 'CastError') {
-    statusCode = 404;
-    message = 'Resource not found';
-  }
-
   // Mongoose Duplicate Key Error
   if (err.code === 11000) {
     statusCode = 409;

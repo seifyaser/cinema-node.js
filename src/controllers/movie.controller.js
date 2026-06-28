@@ -35,10 +35,16 @@ const getMovieById = asyncHandler(async (req, res) => {
   return success(res, 'Movie fetched successfully', { movie });
 });
 
+const searchMovies = asyncHandler(async (req, res) => {
+  const { movies, pagination } = await movieService.searchMovies(req.query);
+  return paginated(res, 'Search results fetched successfully', movies, pagination);
+});
+
 module.exports = {
   createMovie,
   updateMovie,
   deleteMovie,
   getAllMovies,
   getMovieById,
+  searchMovies,
 };
