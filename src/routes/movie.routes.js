@@ -1,6 +1,8 @@
 const express = require('express');
 const movieController = require('../controllers/movie.controller');
+const showtimeController = require('../controllers/showtime.controller');
 const movieValidation = require('../validations/movie.validation');
+const showtimeValidation = require('../validations/showtime.validation');
 const validate = require('../middlewares/validate.middleware');
 const authMiddleware = require('../middlewares/auth.middleware');
 const roleMiddleware = require('../middlewares/role.middleware');
@@ -21,6 +23,17 @@ router.get(
   '/',
   validate(movieValidation.getMovies),
   movieController.getAllMovies
+);
+
+// ─── Showtime User Routes (nested under /movies) ──────────────────────────
+// Declared BEFORE /:id to prevent Express treating path segments as movie IDs
+
+router.get('/:movieId/available-dates', showtimeController.getAvailableDates);
+
+router.get(
+  '/:movieId/showtimes',
+  validate(showtimeValidation.getShowtimesByMovie),
+  showtimeController.getShowtimesByMovie
 );
 
 router.get('/:id', movieController.getMovieById);
