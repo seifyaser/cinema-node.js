@@ -201,3 +201,614 @@ CastError: Cast to ObjectId failed for value "search" (type string) at path "_id
 [2026-06-28T07:37:21.981Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
 [2026-06-28T07:37:21.986Z] INFO: [GET] /api-docs/swagger-ui-init.js
 [2026-06-28T07:37:22.653Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-28T07:41:49.331Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T07:41:49.333Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T07:41:49.368Z] INFO: MongoDB connected successfully
+[2026-06-28T07:42:09.109Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T07:42:09.112Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T07:42:09.144Z] INFO: MongoDB connected successfully
+[2026-06-28T07:42:45.738Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T07:42:45.740Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T07:42:45.772Z] INFO: MongoDB connected successfully
+[2026-06-28T07:43:27.224Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T07:43:27.226Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T07:43:27.259Z] INFO: MongoDB connected successfully
+[2026-06-28T07:43:44.328Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T07:43:44.331Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T07:43:44.375Z] INFO: MongoDB connected successfully
+[2026-06-28T07:44:02.514Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T07:44:02.517Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T07:44:02.562Z] INFO: MongoDB connected successfully
+[2026-06-28T07:47:32.921Z] INFO: [GET] /api-docs/
+[2026-06-28T07:47:32.980Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-28T07:47:32.987Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-28T07:47:32.989Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-28T07:47:32.994Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-28T07:47:33.621Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-28T07:47:58.182Z] INFO: [POST] /api/v1/auth/register
+[2026-06-28T07:47:58.636Z] INFO: User registered successfully: ahmed@example.com
+[2026-06-28T07:48:42.737Z] INFO: [GET] /api/v1/auth/me
+[2026-06-28T07:48:50.388Z] INFO: [POST] /api/v1/auth/login
+[2026-06-28T07:48:50.824Z] INFO: User logged in successfully: ahmed@example.com
+[2026-06-28T07:48:52.556Z] INFO: [POST] /api/v1/auth/login
+[2026-06-28T07:48:52.958Z] INFO: User logged in successfully: ahmed@example.com
+[2026-06-28T07:49:22.069Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-06-28T07:49:23.957Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-06-28T07:50:20.818Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dd
+[2026-06-28T07:50:23.561Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dd
+[2026-06-28T07:52:40.348Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dd/available-dates
+[2026-06-28T07:52:45.106Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dd/available-dates
+[2026-06-28T07:52:46.003Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dd/available-dates
+[2026-06-28T07:52:46.825Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dd/available-dates
+[2026-06-28T07:54:26.953Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dd/showtimes?date=2026-07-01
+[2026-06-28T07:56:32.876Z] INFO: [GET] /api-docs/
+[2026-06-28T07:56:32.940Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-28T07:56:32.942Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-28T07:56:32.944Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-28T07:56:32.948Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-28T07:56:33.707Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-28T07:56:39.574Z] INFO: [GET] /api/v1/auth/me
+[2026-06-28T07:56:46.778Z] INFO: [POST] /api/v1/auth/login
+[2026-06-28T07:56:47.179Z] INFO: User logged in successfully: ahmed@example.com
+[2026-06-28T07:57:05.025Z] INFO: [POST] /api/v1/auth/login
+[2026-06-28T07:57:05.437Z] INFO: User logged in successfully: ahmed@example.com
+[2026-06-28T07:57:26.381Z] INFO: [POST] /api/v1/movies
+[2026-06-28T07:57:31.267Z] INFO: [POST] /api/v1/movies
+[2026-06-28T07:58:26.824Z] INFO: [POST] /api/v1/movies
+[2026-06-28T07:59:03.470Z] INFO: [POST] /api/v1/movies
+[2026-06-28T07:59:15.123Z] INFO: [POST] /api/v1/movies
+[2026-06-28T07:59:15.148Z] INFO: [Admin] Movie created: "The Dark Knight" (6a40d453531f3897688af61a)
+[2026-06-28T08:00:40.230Z] INFO: [POST] /api/v1/halls
+[2026-06-28T08:00:40.277Z] INFO: [Admin] Hall created: "Hall 1" (6a40d4a8531f3897688af61b)
+[2026-06-28T08:00:40.276Z] INFO: Generated 25 seats for hall: "Hall 1"
+[2026-06-28T08:00:41.848Z] INFO: [POST] /api/v1/halls
+[2026-06-28T08:00:55.850Z] INFO: [GET] /api/v1/halls
+[2026-06-28T08:01:32.376Z] INFO: [PUT] /api/v1/showtimes/6a40d453531f3897688af61a
+[2026-06-28T08:02:57.464Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-06-28T08:04:08.728Z] INFO: [POST] /api/v1/showtimes
+[2026-06-28T08:04:08.775Z] INFO: [Admin] Showtime created: 6a40d578531f3897688af636 (14:30–16:45)
+[2026-06-28T08:04:42.466Z] INFO: [GET] /api-docs/
+[2026-06-28T08:04:42.524Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-28T08:04:42.528Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-28T08:04:42.529Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-28T08:04:42.532Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-28T08:04:43.124Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-28T08:05:14.278Z] INFO: [POST] /api/v1/auth/register
+[2026-06-28T08:05:14.684Z] INFO: User registered successfully: saif@saif.com
+[2026-06-28T08:05:44.988Z] INFO: [POST] /api/v1/auth/login
+[2026-06-28T08:05:45.399Z] INFO: User logged in successfully: saif@saif.com
+[2026-06-28T08:06:05.025Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-06-28T08:06:31.468Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/available-dates
+[2026-06-28T08:06:33.774Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/available-dates
+[2026-06-28T08:07:09.252Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/showtimes?date=2026-07-01
+[2026-06-28T08:08:01.932Z] INFO: [GET] /api/v1/showtimes/6a40d453531f3897688af61a/seats
+[2026-06-28T08:08:15.749Z] INFO: [GET] /api/v1/showtimes/665f1a2b3c4d5e6f70000040/seats
+[2026-06-28T08:08:17.845Z] INFO: [GET] /api/v1/showtimes/665f1a2b3c4d5e6f70000040/seats
+[2026-06-28T08:08:34.928Z] INFO: [GET] /api/v1/showtimes/665f1a2b3c4d5e6f70000010/seats
+[2026-06-28T08:09:19.972Z] INFO: [GET] /api/v1/bookings/665f1a2b3c4d5e6f70000040/summary
+[2026-06-28T08:19:11.737Z] INFO: [GET] /api/v1/movies/665f1a2b3c4d5e6f70000010
+[2026-06-28T08:19:15.170Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a
+[2026-06-28T08:19:39.030Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/available-dates
+[2026-06-28T08:23:25.275Z] INFO: [GET] /api/v1/showtimes/665f1a2b3c4d5e6f70000040
+[2026-06-28T08:23:26.387Z] INFO: [GET] /api/v1/showtimes/665f1a2b3c4d5e6f70000040
+[2026-06-28T08:26:18.859Z] INFO: [GET] /api/v1/showtimes/665f1a2b3c4d5e6f70000040
+[2026-06-28T08:26:19.967Z] INFO: [GET] /api/v1/showtimes/665f1a2b3c4d5e6f70000040
+[2026-06-28T08:29:53.906Z] INFO: [GET] /api/v1/showtimes/6a40d578531f3897688af636
+[2026-06-28T08:30:17.737Z] INFO: [GET] /api/v1/showtimes/6a40d578531f3897688af636/seats
+[2026-06-28T08:38:46.297Z] INFO: [POST] /api/v1/auth/login
+[2026-06-28T08:38:46.707Z] INFO: User logged in successfully: ahmed@example.com
+[2026-06-28T08:39:45.389Z] INFO: [GET] /api/v1/showtimes?page=1&limit=10
+[2026-06-28T08:41:43.181Z] INFO: [POST] /api/v1/showtimes
+[2026-06-28T08:42:04.669Z] INFO: [POST] /api/v1/showtimes
+[2026-06-28T08:42:16.040Z] INFO: [POST] /api/v1/showtimes
+[2026-06-28T08:42:16.058Z] INFO: [Admin] Showtime created: 6a40de68531f3897688af638 (18:30–20:45)
+[2026-06-28T08:42:29.514Z] INFO: [GET] /api/v1/showtimes?page=1&limit=10
+[2026-06-28T08:42:37.206Z] INFO: [GET] /api-docs/
+[2026-06-28T08:42:37.323Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-28T08:42:37.325Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-28T08:42:37.326Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-28T08:42:37.331Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-28T08:42:38.049Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-28T08:42:55.069Z] INFO: [POST] /api/v1/auth/login
+[2026-06-28T08:42:55.471Z] INFO: User logged in successfully: saif@saif.com
+[2026-06-28T08:43:10.913Z] INFO: [GET] /api/v1/auth/me
+[2026-06-28T08:43:19.593Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-06-28T08:44:01.077Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/available-dates
+[2026-06-28T08:44:17.148Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/showtimes?date=2026-07-01
+[2026-06-28T08:44:57.582Z] INFO: [GET] /api/v1/showtimes/6a40d578531f3897688af636
+[2026-06-28T08:45:01.061Z] INFO: [GET] /api/v1/showtimes/6a40d578531f3897688af636
+[2026-06-28T08:45:23.934Z] INFO: [GET] /api/v1/showtimes/6a40de68531f3897688af638
+[2026-06-28T08:45:38.612Z] INFO: [GET] /api/v1/showtimes/6a40de68531f3897688af638/seats
+[2026-06-28T08:46:12.914Z] INFO: [POST] /api/v1/bookings/hold
+[2026-06-28T08:47:01.015Z] INFO: [POST] /api/v1/bookings/hold
+[2026-06-28T08:47:01.053Z] ERROR: [POST] /api/v1/bookings/hold >> This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoServerError: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+    at executeOperationWithRetries (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:217:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.deleteMany (D:\node.js\cinema\node_modules\mongodb\lib\collection.js:280:16)
+    at async maybeTracedQueryExec (D:\node.js\cinema\node_modules\mongoose\lib\query.js:4801:65)
+    at async Object.holdSeats (D:\node.js\cinema\src\services\booking.service.js:137:5)
+    at async D:\node.js\cinema\src\controllers\booking.controller.js:13:18
+[2026-06-28T08:47:08.248Z] INFO: [POST] /api/v1/bookings/hold
+[2026-06-28T08:47:08.269Z] ERROR: [POST] /api/v1/bookings/hold >> This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoServerError: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+    at executeOperationWithRetries (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:217:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.deleteMany (D:\node.js\cinema\node_modules\mongodb\lib\collection.js:280:16)
+    at async maybeTracedQueryExec (D:\node.js\cinema\node_modules\mongoose\lib\query.js:4801:65)
+    at async Object.holdSeats (D:\node.js\cinema\src\services\booking.service.js:137:5)
+    at async D:\node.js\cinema\src\controllers\booking.controller.js:13:18
+[2026-06-28T08:49:34.163Z] INFO: [POST] /api/v1/bookings/hold
+[2026-06-28T08:49:34.189Z] ERROR: [POST] /api/v1/bookings/hold >> This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoServerError: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+    at executeOperationWithRetries (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:217:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.deleteMany (D:\node.js\cinema\node_modules\mongodb\lib\collection.js:280:16)
+    at async maybeTracedQueryExec (D:\node.js\cinema\node_modules\mongoose\lib\query.js:4801:65)
+    at async Object.holdSeats (D:\node.js\cinema\src\services\booking.service.js:137:5)
+    at async D:\node.js\cinema\src\controllers\booking.controller.js:13:18
+[2026-06-28T09:15:01.304Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:15:01.306Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:16:43.187Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:16:43.190Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:16:49.053Z] INFO: MongoDB connected successfully
+[2026-06-28T09:16:59.817Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:16:59.821Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:16:59.857Z] INFO: MongoDB connected successfully
+[2026-06-28T09:18:40.979Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:18:40.981Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:18:41.024Z] INFO: MongoDB connected successfully
+[2026-06-28T09:22:20.841Z] INFO: [GET] /api-docs/
+[2026-06-28T09:22:20.929Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-28T09:22:20.932Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-28T09:22:20.939Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-28T09:22:20.941Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-28T09:22:21.723Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-28T09:22:28.431Z] INFO: [POST] /api/v1/bookings/hold
+[2026-06-28T09:22:43.373Z] INFO: [POST] /api/v1/auth/login
+[2026-06-28T09:22:43.820Z] INFO: User logged in successfully: saif@saif.com
+[2026-06-28T09:23:17.588Z] INFO: [POST] /api/v1/bookings/hold
+[2026-06-28T09:23:32.987Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-06-28T09:23:54.431Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/available-dates
+[2026-06-28T09:24:07.751Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/showtimes?date=2026-07-01
+[2026-06-28T09:24:26.235Z] INFO: [GET] /api/v1/showtimes/665f1a2b3c4d5e6f70000040
+[2026-06-28T09:24:29.171Z] INFO: [GET] /api/v1/showtimes/6a40d578531f3897688af636
+[2026-06-28T09:24:48.716Z] INFO: [GET] /api/v1/showtimes/6a40d4a8531f3897688af61b/seats
+[2026-06-28T09:25:12.406Z] INFO: [GET] /api/v1/showtimes/6a40d578531f3897688af636/seats
+[2026-06-28T09:25:55.394Z] INFO: [POST] /api/v1/bookings/hold
+[2026-06-28T09:27:00.691Z] INFO: [POST] /api/v1/bookings/hold
+[2026-06-28T09:27:00.778Z] INFO: [Booking] User 6a40d5ba531f3897688af637 held 2 seats for showtime 6a40d578531f3897688af636 — expires at 2026-06-28T09:32:00.708Z
+[2026-06-28T09:27:00.779Z] INFO: [Booking] Seats held — Booking ID: 6a40e8e4a6618c76fa0fc536
+[2026-06-28T09:27:42.783Z] INFO: [GET] /api/v1/bookings/6a40e8e4a6618c76fa0fc536/summary
+[2026-06-28T09:55:40.113Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:55:40.115Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:55:40.155Z] INFO: MongoDB connected successfully
+[2026-06-28T09:56:55.275Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:56:55.278Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:56:55.313Z] INFO: MongoDB connected successfully
+[2026-06-28T09:57:05.362Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:57:05.366Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:57:05.425Z] INFO: MongoDB connected successfully
+[2026-06-28T09:57:13.072Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:57:13.075Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:57:13.111Z] INFO: MongoDB connected successfully
+[2026-06-28T09:57:34.459Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:57:34.461Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:57:34.500Z] INFO: MongoDB connected successfully
+[2026-06-28T09:57:51.267Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:57:51.271Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:57:51.315Z] INFO: MongoDB connected successfully
+[2026-06-28T09:58:09.152Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:58:09.155Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:58:09.194Z] INFO: MongoDB connected successfully
+[2026-06-28T09:58:18.515Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:58:18.517Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:58:18.558Z] INFO: MongoDB connected successfully
+[2026-06-28T09:58:26.253Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:58:26.256Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:58:26.290Z] INFO: MongoDB connected successfully
+[2026-06-28T09:59:45.631Z] INFO: Server is running on port 3000 in development mode
+[2026-06-28T09:59:45.633Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-06-28T09:59:45.674Z] INFO: MongoDB connected successfully
+[2026-06-28T10:05:32.892Z] INFO: [GET] /api-docs/
+[2026-06-28T10:05:32.978Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-28T10:05:32.980Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-28T10:05:32.984Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-28T10:05:32.988Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-28T10:05:33.808Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-06-28T10:14:00.525Z] INFO: [GET] /api-docs/
+[2026-06-28T10:14:00.664Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-06-28T10:14:00.666Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-06-28T10:14:00.672Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-06-28T10:14:00.674Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-06-28T10:14:33.266Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-06-28T10:24:41.628Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-06-28T10:24:42.211Z] INFO: [GET] /favicon.ico
+[2026-07-04T19:46:07.728Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T19:46:07.731Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T19:46:07.796Z] INFO: MongoDB connected successfully
+[2026-07-04T19:46:19.953Z] INFO: [GET] /
+[2026-07-04T19:46:20.578Z] INFO: [GET] /favicon.ico
+[2026-07-04T19:46:22.361Z] INFO: [GET] /
+[2026-07-04T19:47:07.202Z] INFO: [GET] /
+[2026-07-04T19:47:10.188Z] INFO: [GET] /api-docs
+[2026-07-04T19:47:10.204Z] INFO: [GET] /api-docs/
+[2026-07-04T19:47:10.286Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-04T19:47:10.287Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-04T19:47:10.293Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-04T19:47:10.298Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-04T19:48:17.063Z] INFO: [POST] /api/v1/auth/login
+[2026-07-04T19:48:17.563Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-04T19:48:27.976Z] INFO: [POST] /api/v1/auth/login
+[2026-07-04T19:48:28.394Z] INFO: User logged in successfully: saif@saif.com
+[2026-07-04T19:48:46.684Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-04T19:49:35.961Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/available-dates
+[2026-07-04T19:50:01.201Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/available-dates
+[2026-07-04T19:50:48.478Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dd/available-dates
+[2026-07-04T19:50:49.960Z] INFO: [GET] /api/v1/movies/6a403e83a1132d31ccd883dd/available-dates
+[2026-07-04T19:51:04.039Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/available-dates
+[2026-07-04T19:56:42.148Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T19:56:42.151Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T19:56:42.198Z] INFO: MongoDB connected successfully
+[2026-07-04T19:56:55.205Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T19:56:55.209Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T19:56:55.281Z] INFO: MongoDB connected successfully
+[2026-07-04T19:57:16.046Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T19:57:16.049Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T19:57:16.098Z] INFO: MongoDB connected successfully
+[2026-07-04T19:57:28.036Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T19:57:28.039Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T19:57:28.089Z] INFO: MongoDB connected successfully
+[2026-07-04T19:57:46.416Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T19:57:46.419Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T19:57:46.467Z] INFO: MongoDB connected successfully
+[2026-07-04T19:58:38.505Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T19:58:38.508Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T19:58:38.566Z] INFO: MongoDB connected successfully
+[2026-07-04T19:58:44.155Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T19:58:44.159Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T19:58:44.207Z] INFO: MongoDB connected successfully
+[2026-07-04T20:01:38.922Z] INFO: [GET] /
+[2026-07-04T20:01:53.675Z] INFO: [GET] /admin-dashboard
+[2026-07-04T20:05:19.436Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T20:05:19.440Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T20:05:19.499Z] INFO: MongoDB connected successfully
+[2026-07-04T20:05:26.005Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T20:05:26.011Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T20:05:26.067Z] INFO: MongoDB connected successfully
+[2026-07-04T20:05:57.315Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T20:05:57.318Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T20:05:57.369Z] INFO: MongoDB connected successfully
+[2026-07-04T20:06:38.069Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T20:06:38.072Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T20:06:38.129Z] INFO: MongoDB connected successfully
+[2026-07-04T20:07:06.200Z] INFO: [GET] /api-docs/
+[2026-07-04T20:07:06.275Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-04T20:07:06.277Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-04T20:07:06.285Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-04T20:07:06.287Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-04T20:07:07.181Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-04T20:07:22.186Z] INFO: [POST] /auth/login
+[2026-07-04T20:08:04.354Z] INFO: [POST] /auth/login
+[2026-07-04T20:08:41.709Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T20:08:41.713Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T20:08:41.764Z] INFO: MongoDB connected successfully
+[2026-07-04T20:09:10.973Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T20:09:10.977Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T20:09:11.027Z] INFO: MongoDB connected successfully
+[2026-07-04T20:09:19.633Z] INFO: [POST] /api/v1/auth/login
+[2026-07-04T20:09:20.080Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-04T20:09:20.153Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:09:20.201Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:09:26.206Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:09:26.232Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:09:30.625Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:09:30.637Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:09:35.337Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:09:35.348Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:09:38.917Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:09:38.936Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:09:49.871Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:09:49.896Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:09:51.577Z] INFO: [GET] /api/v1/bookings
+[2026-07-04T20:09:51.627Z] INFO: [GET] /api/v1/bookings
+[2026-07-04T20:10:01.486Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:10:01.503Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:10:11.050Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:10:11.072Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:10:59.604Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:10:59.615Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:23.418Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:11:23.433Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:11:24.551Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:24.566Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:27.850Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:11:27.868Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:11:29.130Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:11:29.154Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:11:30.610Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:11:30.625Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:11:32.799Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:32.816Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:39.778Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:11:39.794Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:11:45.121Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:45.132Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:45.751Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:11:45.763Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:11:47.230Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:47.240Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:47.706Z] INFO: [GET] /api/v1/bookings
+[2026-07-04T20:11:47.739Z] INFO: [GET] /api/v1/bookings
+[2026-07-04T20:11:48.830Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:48.840Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:49.281Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:11:49.299Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:11:50.231Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:11:50.244Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:11:50.598Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:11:50.609Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:13:04.647Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:13:04.666Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:13:09.270Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:13:09.287Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:14:00.603Z] INFO: [GET] /api/v1/auth/me
+[2026-07-04T20:14:00.598Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:15:05.276Z] INFO: [GET] /api/v1/auth/me
+[2026-07-04T20:15:05.272Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:15:05.291Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:15:05.296Z] INFO: [GET] /api/v1/auth/me
+[2026-07-04T20:15:08.180Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:15:08.194Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:15:09.278Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:15:09.289Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:16:57.931Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:16:57.945Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:17:12.701Z] INFO: [GET] /api/v1/bookings
+[2026-07-04T20:17:12.727Z] INFO: [GET] /api/v1/bookings
+[2026-07-04T20:17:14.933Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:17:14.948Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:17:15.688Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:17:15.697Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:17:19.199Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:17:19.216Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:17:20.132Z] INFO: [GET] /api/v1/bookings
+[2026-07-04T20:17:20.154Z] INFO: [GET] /api/v1/bookings
+[2026-07-04T20:17:20.994Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:17:21.008Z] INFO: [GET] /api/v1/users
+[2026-07-04T20:17:22.230Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:17:22.246Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:17:22.754Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:17:22.764Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:19:48.604Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:20:57.879Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:20:57.886Z] INFO: [GET] /api/v1/auth/me
+[2026-07-04T20:20:57.899Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:20:57.913Z] INFO: [GET] /api/v1/auth/me
+[2026-07-04T20:21:18.812Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:21:18.805Z] INFO: [GET] /api/v1/showtimes
+[2026-07-04T20:21:18.816Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:21:18.840Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:21:18.854Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:21:18.861Z] INFO: [GET] /api/v1/showtimes
+[2026-07-04T20:22:20.188Z] INFO: [POST] /api/v1/showtimes
+[2026-07-04T20:22:20.268Z] INFO: [Admin] Showtime created: 6a496b7ce2e1f93fa2024dee (14:22–16:22)
+[2026-07-04T20:22:20.282Z] INFO: [GET] /api/v1/showtimes
+[2026-07-04T20:22:20.295Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:22:20.301Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:23:01.681Z] INFO: [POST] /api/v1/showtimes
+[2026-07-04T20:23:12.350Z] INFO: [POST] /api/v1/showtimes
+[2026-07-04T20:23:12.396Z] INFO: [Admin] Showtime created: 6a496bb0e2e1f93fa2024def (16:22–18:22)
+[2026-07-04T20:24:17.096Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T20:24:17.100Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T20:24:17.172Z] INFO: MongoDB connected successfully
+[2026-07-04T20:24:17.389Z] INFO: [POST] /api/v1/auth/login
+[2026-07-04T20:24:17.838Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-04T20:24:17.911Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:24:17.923Z] INFO: [GET] /api/v1/auth/me
+[2026-07-04T20:24:17.968Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:24:17.977Z] INFO: [GET] /api/v1/auth/me
+[2026-07-04T20:24:19.022Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:24:19.046Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:24:21.975Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:24:21.984Z] INFO: [GET] /api/v1/showtimes
+[2026-07-04T20:24:21.996Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:24:22.010Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:24:22.053Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:24:22.072Z] INFO: [GET] /api/v1/showtimes
+[2026-07-04T20:24:27.512Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:24:27.534Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:24:28.159Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:24:28.167Z] INFO: [GET] /api/v1/showtimes
+[2026-07-04T20:24:28.179Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:24:28.194Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:24:28.217Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:24:28.236Z] INFO: [GET] /api/v1/showtimes
+[2026-07-04T20:24:28.974Z] INFO: [GET] /api/v1/bookings
+[2026-07-04T20:24:29.003Z] INFO: [GET] /api/v1/bookings
+[2026-07-04T20:24:29.581Z] INFO: [GET] /api/v1/showtimes
+[2026-07-04T20:24:29.586Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:24:29.598Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:24:29.618Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:24:29.639Z] INFO: [GET] /api/v1/halls
+[2026-07-04T20:24:29.635Z] INFO: [GET] /api/v1/showtimes
+[2026-07-04T20:24:37.483Z] INFO: [GET] /api-docs/
+[2026-07-04T20:24:37.560Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-04T20:24:37.565Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-04T20:24:37.566Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-04T20:24:37.570Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-04T20:24:38.263Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-04T20:24:49.786Z] INFO: [POST] /api/v1/auth/login
+[2026-07-04T20:24:50.211Z] INFO: User logged in successfully: saif@saif.com
+[2026-07-04T20:25:02.491Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-04T20:25:25.372Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/available-dates
+[2026-07-04T20:26:16.452Z] INFO: [GET] /api/v1/movies/6a40d453531f3897688af61a/showtimes?date=2026-07-05
+[2026-07-04T20:27:23.166Z] INFO: [GET] /api/v1/showtimes/6a496b7ce2e1f93fa2024dee
+[2026-07-04T20:28:42.713Z] INFO: [GET] /api/v1/showtimes/6a496b7ce2e1f93fa2024dee/seats
+[2026-07-04T20:29:27.433Z] INFO: [POST] /api/v1/bookings/hold
+[2026-07-04T20:29:41.836Z] INFO: [POST] /api/v1/bookings/hold
+[2026-07-04T20:29:41.938Z] INFO: [Booking] User 6a40d5ba531f3897688af637 held 1 seats for showtime 6a496b7ce2e1f93fa2024dee — expires at 2026-07-04T20:34:41.856Z
+[2026-07-04T20:29:41.939Z] INFO: [Booking] Seats held — Booking ID: 6a496d35a626445d5f733e13
+[2026-07-04T20:30:05.835Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:30:05.849Z] INFO: [GET] /api/v1/movies
+[2026-07-04T20:30:08.948Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:30:08.966Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-04T20:31:52.387Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T20:31:52.390Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T20:31:52.439Z] INFO: MongoDB connected successfully
+[2026-07-04T22:51:50.343Z] INFO: Server is running on port 3000 in development mode
+[2026-07-04T22:51:50.347Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-04T22:51:50.401Z] INFO: MongoDB connected successfully
+[2026-07-04T22:52:59.713Z] INFO: [GET] /api-docs/
+[2026-07-04T22:52:59.867Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-04T22:52:59.869Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-04T22:52:59.875Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-04T22:52:59.879Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-05T17:11:22.346Z] INFO: Server is running on port 3000 in development mode
+[2026-07-05T17:11:22.350Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-05T17:11:22.458Z] INFO: MongoDB connected successfully
+[2026-07-05T17:11:40.796Z] INFO: [GET] /api-docs/
+[2026-07-05T17:11:41.264Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-05T17:11:41.281Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-05T17:11:41.298Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-05T17:11:41.307Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-05T17:31:02.109Z] INFO: [GET] /api/v1/auth/me
+[2026-07-05T17:32:43.866Z] INFO: [POST] /api/v1/auth/register
+[2026-07-05T18:26:56.082Z] INFO: [POST] /api/v1/auth/register
+[2026-07-05T18:32:08.242Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T18:32:08.804Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-05T18:34:12.103Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T18:34:12.531Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-05T19:41:20.054Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:41:26.348Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:41:45.807Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:41:59.991Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:42:00.473Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-05T19:42:21.329Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:45:19.634Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:45:38.869Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:45:41.887Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:45:58.299Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:47:49.215Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:48:00.354Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:50:33.927Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:50:34.358Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-05T19:50:49.211Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:50:49.639Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-05T19:54:53.828Z] INFO: [POST] /api/v1/auth/login
+[2026-07-05T19:54:54.251Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-07T23:15:21.752Z] INFO: Server is running on port 3000 in development mode
+[2026-07-07T23:15:21.754Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-07T23:15:21.797Z] INFO: MongoDB connected successfully
+[2026-07-07T23:15:24.616Z] INFO: [GET] /api-docs
+[2026-07-07T23:15:24.630Z] INFO: [GET] /api-docs/
+[2026-07-07T23:15:24.784Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-07T23:15:24.790Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-07T23:15:24.792Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-07T23:15:24.793Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-07T23:15:25.469Z] INFO: [GET] /api-docs/favicon-16x16.png
+[2026-07-07T23:15:41.077Z] INFO: [GET] /api-docs/
+[2026-07-07T23:15:41.242Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-07T23:15:41.247Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-07T23:15:41.251Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-07T23:15:41.254Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-07T23:16:08.425Z] INFO: Server is running on port 3000 in development mode
+[2026-07-07T23:16:08.428Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-07T23:16:08.482Z] INFO: MongoDB connected successfully
+[2026-07-07T23:16:10.976Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-07T23:55:50.767Z] INFO: [GET] /api-docs/
+[2026-07-07T23:55:50.998Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-07T23:55:51.004Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-07T23:55:51.007Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-07T23:55:51.017Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-07T23:55:51.760Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-07T23:56:58.194Z] INFO: [POST] /api/v1/auth/login
+[2026-07-07T23:56:58.756Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-07T23:58:40.023Z] INFO: [POST] /api/v1/auth/login
+[2026-07-07T23:58:53.225Z] INFO: [POST] /api/v1/auth/login
+[2026-07-07T23:59:13.548Z] INFO: [POST] /api/v1/auth/login
+[2026-07-07T23:59:13.959Z] INFO: User logged in successfully: saif@saif.com
+[2026-07-08T00:01:43.142Z] INFO: [POST] /api/v1/
+[2026-07-08T00:02:06.429Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T00:02:06.853Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T00:05:53.573Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T00:05:53.995Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T00:06:50.093Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T00:06:59.492Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T00:06:59.914Z] INFO: User logged in successfully: saif@saif.com
+[2026-07-08T00:09:09.462Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-08T00:14:26.081Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:14:26.085Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:14:26.136Z] INFO: MongoDB connected successfully
+[2026-07-08T00:14:36.819Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:14:36.822Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:14:36.874Z] INFO: MongoDB connected successfully
+[2026-07-08T00:14:51.378Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:14:51.381Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:14:51.432Z] INFO: MongoDB connected successfully
+[2026-07-08T00:15:07.421Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:15:07.425Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:15:07.473Z] INFO: MongoDB connected successfully
+[2026-07-08T00:15:12.328Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:15:12.331Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:15:12.377Z] INFO: MongoDB connected successfully
+[2026-07-08T00:15:19.275Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:15:19.278Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:15:19.316Z] INFO: MongoDB connected successfully
+[2026-07-08T00:15:33.813Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T00:15:34.281Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T00:15:34.391Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T00:15:34.377Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-08T00:15:34.427Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T00:15:34.464Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-08T00:15:36.194Z] INFO: [GET] /api/v1/movies
+[2026-07-08T00:15:36.240Z] INFO: [GET] /api/v1/movies
+[2026-07-08T00:15:52.260Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:15:52.263Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:15:52.318Z] INFO: MongoDB connected successfully
+[2026-07-08T00:16:00.485Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:16:00.507Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:16:00.598Z] INFO: MongoDB connected successfully
+[2026-07-08T00:17:20.031Z] INFO: [GET] /api/v1/users
+[2026-07-08T00:17:20.088Z] INFO: [GET] /api/v1/users
+[2026-07-08T00:17:21.347Z] INFO: [GET] /api/v1/movies
+[2026-07-08T00:17:21.383Z] INFO: [GET] /api/v1/movies
+[2026-07-08T00:17:35.766Z] INFO: [GET] /api-docs/
+[2026-07-08T00:17:35.847Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T00:17:35.848Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T00:17:35.854Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T00:17:35.855Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T00:17:36.650Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-08T00:17:44.533Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-08T00:28:38.048Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T00:28:38.038Z] INFO: [GET] /api/v1/movies
+[2026-07-08T00:28:38.068Z] INFO: [GET] /api/v1/movies
+[2026-07-08T00:28:38.084Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T00:39:23.806Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:39:23.814Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:39:23.905Z] INFO: MongoDB connected successfully
+[2026-07-08T00:39:43.368Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:39:43.372Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:39:43.425Z] INFO: MongoDB connected successfully
+[2026-07-08T00:39:50.261Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:39:50.266Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:39:50.325Z] INFO: MongoDB connected successfully
+[2026-07-08T00:41:05.615Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:41:05.619Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:41:05.676Z] INFO: MongoDB connected successfully
+[2026-07-08T00:41:16.805Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T00:41:16.809Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T00:41:16.861Z] INFO: MongoDB connected successfully
+[2026-07-08T00:43:36.775Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-08T00:43:47.531Z] INFO: [GET] /api-docs/
+[2026-07-08T00:43:47.703Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T00:43:47.710Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T00:43:47.712Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T00:43:47.714Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T00:43:55.429Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-08T00:44:05.999Z] INFO: [GET] /api/v1/movies
+[2026-07-08T00:44:06.842Z] INFO: [GET] /favicon.ico
+[2026-07-08T00:46:15.348Z] INFO: [GET] /api/v1/movies

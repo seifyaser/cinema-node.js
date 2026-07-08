@@ -3,6 +3,8 @@ const bookingController = require('../controllers/booking.controller');
 const bookingValidation = require('../validations/booking.validation');
 const validate = require('../middlewares/validate.middleware');
 const authMiddleware = require('../middlewares/auth.middleware');
+const roleMiddleware = require('../middlewares/role.middleware');
+const ROLES = require('../constants/roles');
 
 const router = express.Router();
 
@@ -13,6 +15,12 @@ router.post(
   '/hold',
   validate(bookingValidation.holdSeats),
   bookingController.holdSeats
+);
+
+router.get(
+  '/',
+  roleMiddleware(ROLES.ADMIN),
+  bookingController.getAllBookings
 );
 
 router.get('/:id/summary', bookingController.getBookingSummary);

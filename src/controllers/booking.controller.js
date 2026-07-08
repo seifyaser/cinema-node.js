@@ -1,4 +1,5 @@
 const bookingService = require('../services/booking.service');
+const Booking = require('../models/Booking');
 const { success } = require('../utils/apiResponse');
 const asyncHandler = require('../middlewares/asyncHandler');
 const logger = require('../config/logger');
@@ -22,8 +23,24 @@ const getBookingSummary = asyncHandler(async (req, res) => {
   return success(res, 'Booking summary fetched successfully', summary);
 });
 
+const getAllBookings = asyncHandler(async (req, res) => {
+  const bookings = await Booking.find()
+    .populate('user', 'name email')
+    .populate({
+      path: 'showtime',
+      populate: [
+        { path: 'movie', select: 'title' },
+        { path: 'hall', select: 'name' }
+      ]
+    })
+    .sort('-createdAt');
+    
+  return success(res, 'All bookings fetched successfully', { bookings, total: bookings.length });
+});
+
 module.exports = {
   getSeatMap,
   holdSeats,
   getBookingSummary,
+  getAllBookings,
 };

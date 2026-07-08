@@ -94,7 +94,7 @@ const searchMovies = async (query) => {
     isActive: true,
     $or: [
       { title: { $regex: q, $options: 'i' } },
-      { actors: { $regex: q, $options: 'i' } },
+      { 'actors.name': { $regex: q, $options: 'i' } },
       { genre: { $regex: q, $options: 'i' } },
     ],
   };

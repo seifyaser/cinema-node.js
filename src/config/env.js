@@ -11,6 +11,8 @@ const envSchema = Joi.object({
   JWT_EXPIRES_IN: Joi.string().default('7d').description('JWT expiration time'),
   MAX_BOOKING_SEATS: Joi.number().integer().min(1).default(10).description('Maximum seats per booking'),
   HOLD_DURATION_MINUTES: Joi.number().integer().min(1).default(5).description('Seat hold duration in minutes'),
+  PAYMOB_API_KEY: Joi.string().description('Paymob API Key'),
+  PAYMOB_HMAC: Joi.string().description('Paymob HMAC Secret'),
 }).unknown();
 
 const { value: envVars, error } = envSchema.validate(process.env);
@@ -32,5 +34,9 @@ module.exports = {
   booking: {
     maxSeats: envVars.MAX_BOOKING_SEATS,
     holdDurationMinutes: envVars.HOLD_DURATION_MINUTES,
+  },
+  paymob: {
+    apiKey: envVars.PAYMOB_API_KEY,
+    hmac: envVars.PAYMOB_HMAC,
   },
 };

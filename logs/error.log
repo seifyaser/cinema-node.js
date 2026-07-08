@@ -31,3 +31,30 @@ CastError: Cast to ObjectId failed for value "search" (type string) at path "_id
     at maybeTracedQueryExec (D:\node.js\cinema\node_modules\mongoose\lib\query.js:4801:83)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async Object.getMovieById (D:\node.js\cinema\src\services\movie.service.js:85:17)
+[2026-06-28T08:47:01.053Z] ERROR: [POST] /api/v1/bookings/hold >> This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoServerError: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+    at executeOperationWithRetries (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:217:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.deleteMany (D:\node.js\cinema\node_modules\mongodb\lib\collection.js:280:16)
+    at async maybeTracedQueryExec (D:\node.js\cinema\node_modules\mongoose\lib\query.js:4801:65)
+    at async Object.holdSeats (D:\node.js\cinema\src\services\booking.service.js:137:5)
+    at async D:\node.js\cinema\src\controllers\booking.controller.js:13:18
+[2026-06-28T08:47:08.269Z] ERROR: [POST] /api/v1/bookings/hold >> This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoServerError: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+    at executeOperationWithRetries (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:217:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.deleteMany (D:\node.js\cinema\node_modules\mongodb\lib\collection.js:280:16)
+    at async maybeTracedQueryExec (D:\node.js\cinema\node_modules\mongoose\lib\query.js:4801:65)
+    at async Object.holdSeats (D:\node.js\cinema\src\services\booking.service.js:137:5)
+    at async D:\node.js\cinema\src\controllers\booking.controller.js:13:18
+[2026-06-28T08:49:34.189Z] ERROR: [POST] /api/v1/bookings/hold >> This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+MongoServerError: This MongoDB deployment does not support retryable writes. Please add retryWrites=false to your connection string.
+    at executeOperationWithRetries (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:217:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (D:\node.js\cinema\node_modules\mongodb\lib\operations\execute_operation.js:83:16)
+    at async Collection.deleteMany (D:\node.js\cinema\node_modules\mongodb\lib\collection.js:280:16)
+    at async maybeTracedQueryExec (D:\node.js\cinema\node_modules\mongoose\lib\query.js:4801:65)
+    at async Object.holdSeats (D:\node.js\cinema\src\services\booking.service.js:137:5)
+    at async D:\node.js\cinema\src\controllers\booking.controller.js:13:18

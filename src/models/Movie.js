@@ -47,7 +47,19 @@ const movieSchema = new mongoose.Schema(
       required: [true, 'Release date is required'],
     },
     actors: {
-      type: [String],
+      type: [
+        {
+          name: {
+            type: String,
+            required: [true, 'Actor name is required'],
+            trim: true,
+          },
+          image: {
+            type: String,
+            default: null,
+          },
+        },
+      ],
       default: [],
     },
     status: {

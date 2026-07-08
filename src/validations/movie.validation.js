@@ -14,7 +14,14 @@ const createMovie = {
     duration: Joi.number().integer().min(1).required(),
     ageRating: Joi.string().valid(...AGE_RATINGS).optional(),
     releaseDate: Joi.date().required(),
-    actors: Joi.array().items(Joi.string().trim()).default([]),
+    actors: Joi.array()
+      .items(
+        Joi.object().keys({
+          name: Joi.string().trim().required(),
+          image: Joi.string().uri().allow(null, '').optional(),
+        })
+      )
+      .default([]),
     status: Joi.string()
       .valid(MOVIE_STATUS.NOW_SHOWING, MOVIE_STATUS.COMING_SOON)
       .optional(),
@@ -33,7 +40,14 @@ const updateMovie = {
       duration: Joi.number().integer().min(1).optional(),
       ageRating: Joi.string().valid(...AGE_RATINGS).optional(),
       releaseDate: Joi.date().optional(),
-      actors: Joi.array().items(Joi.string().trim()).optional(),
+      actors: Joi.array()
+        .items(
+          Joi.object().keys({
+            name: Joi.string().trim().required(),
+            image: Joi.string().uri().allow(null, '').optional(),
+          })
+        )
+        .optional(),
       status: Joi.string()
         .valid(MOVIE_STATUS.NOW_SHOWING, MOVIE_STATUS.COMING_SOON)
         .optional(),
