@@ -15,7 +15,13 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response && error.response.status === 401) {
+    // Don't redirect if the 401 is from the login endpoint itself (e.g., incorrect password)
+    if (
+      error.response &&
+      error.response.status === 401 &&
+      error.config &&
+      !error.config.url.includes('/auth/login')
+    ) {
       localStorage.removeItem('adminToken');
       window.location.href = '/login';
     }

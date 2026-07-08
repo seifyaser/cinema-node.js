@@ -812,3 +812,461 @@ MongoServerError: This MongoDB deployment does not support retryable writes. Ple
 [2026-07-08T00:44:05.999Z] INFO: [GET] /api/v1/movies
 [2026-07-08T00:44:06.842Z] INFO: [GET] /favicon.ico
 [2026-07-08T00:46:15.348Z] INFO: [GET] /api/v1/movies
+[2026-07-08T01:08:33.484Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T01:08:34.035Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T01:09:07.632Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T01:09:08.064Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T01:15:07.266Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T01:15:15.165Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T01:15:15.642Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T01:18:31.819Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T01:18:32.254Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T01:24:35.383Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T01:24:35.810Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T01:34:47.780Z] INFO: [GET] /api/v1/movies
+[2026-07-08T01:34:47.817Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T01:34:47.900Z] INFO: [GET] /api/v1/movies
+[2026-07-08T01:34:47.906Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T01:34:49.444Z] INFO: [GET] /api/v1/movies
+[2026-07-08T01:34:49.449Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T01:34:49.469Z] INFO: [GET] /api/v1/movies
+[2026-07-08T01:34:49.486Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T02:10:13.142Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T02:10:13.052Z] INFO: [GET] /api/v1/movies
+[2026-07-08T02:10:13.208Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T02:10:13.241Z] INFO: [GET] /api/v1/movies
+[2026-07-08T03:27:11.195Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T03:27:18.705Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T03:27:19.147Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T03:34:32.707Z] INFO: [GET] /api-docs/
+[2026-07-08T03:34:32.844Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T03:34:32.855Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T03:34:32.862Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T03:34:32.864Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T03:34:33.529Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-08T03:34:41.753Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-08T03:45:32.443Z] INFO: [GET] /api/v1/movies
+[2026-07-08T03:56:46.894Z] INFO: [GET] /api/v1/movies
+[2026-07-08T03:59:40.904Z] INFO: [GET] /api/v1/movies?coming_soon
+[2026-07-08T03:59:41.631Z] INFO: [GET] /api/v1/movies?coming_soon
+[2026-07-08T04:00:22.499Z] INFO: [GET] /api/v1/movies?status=%20%22now_showing%22
+[2026-07-08T04:00:34.158Z] INFO: [GET] /api/v1/movies?status+now_showing
+[2026-07-08T04:00:42.816Z] INFO: [GET] /api/v1/movies?status+now_showing
+[2026-07-08T04:00:47.857Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:08:35.438Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:08:35.464Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:10:08.641Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:10:08.647Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:10:15.280Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:10:15.406Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:17:55.942Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:17:56.016Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:20:46.239Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:20:46.245Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:26:09.010Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:26:09.078Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:28:21.582Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:28:21.593Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:28:29.353Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:28:29.381Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:30:43.514Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:30:43.520Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:34:53.494Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:34:53.507Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:35:23.339Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:35:23.344Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:35:23.935Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:35:23.954Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:35:29.965Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:35:29.987Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:38:24.169Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:38:24.184Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:43:29.958Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:43:29.940Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:43:36.601Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:43:36.621Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:44:05.279Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:44:05.303Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:45:53.948Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:45:53.958Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:46:11.068Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:46:11.073Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:46:27.378Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:46:27.383Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:46:42.799Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:46:42.806Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:46:51.531Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:46:51.547Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:47:01.556Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:47:01.561Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:50:47.027Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:50:47.068Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:52:03.424Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:52:03.598Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T04:52:52.065Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T04:52:52.070Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T05:00:04.347Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T05:00:04.382Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T05:09:28.335Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T05:09:28.375Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T05:09:29.112Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T05:09:29.116Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T05:09:36.630Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T05:09:36.655Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T05:12:53.073Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T05:12:53.108Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T18:39:12.061Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T18:39:12.065Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T18:39:12.119Z] INFO: MongoDB connected successfully
+[2026-07-08T18:40:01.490Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T18:40:01.506Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T18:49:07.285Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T18:49:07.323Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T18:50:50.148Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T18:50:50.159Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T19:15:02.176Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T19:15:02.182Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T19:15:02.268Z] INFO: MongoDB connected successfully
+[2026-07-08T19:15:02.515Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T19:15:02.470Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-08T19:15:02.591Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T19:15:02.606Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-08T19:20:06.666Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T19:20:06.669Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T19:20:06.709Z] INFO: MongoDB connected successfully
+[2026-07-08T19:29:00.698Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T19:29:00.702Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T19:29:00.748Z] INFO: MongoDB connected successfully
+[2026-07-08T19:29:21.174Z] INFO: [GET] /api-docs/
+[2026-07-08T19:29:21.311Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T19:29:21.314Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T19:29:21.319Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T19:29:21.323Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T19:29:42.208Z] INFO: [GET] /api-docs/
+[2026-07-08T19:29:42.485Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T19:29:42.510Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T19:29:42.515Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T19:29:42.519Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T19:29:45.167Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-08T19:30:23.560Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T19:30:23.583Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T19:30:26.232Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T19:30:26.249Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T19:30:34.799Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T19:30:34.792Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T19:31:19.091Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:31:19.116Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:31:37.500Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T19:31:37.518Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:31:37.529Z] INFO: [GET] /api/v1/halls
+[2026-07-08T19:31:37.598Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:31:37.624Z] INFO: [GET] /api/v1/halls
+[2026-07-08T19:31:37.639Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T19:32:12.140Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T19:32:12.188Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T19:32:47.751Z] INFO: [PUT] /api/v1/showtimes/6a40d578531f3897688af636
+[2026-07-08T19:32:54.733Z] INFO: [PUT] /api/v1/showtimes/6a40d578531f3897688af636
+[2026-07-08T19:32:54.821Z] INFO: [Admin] Showtime updated: 6a40d578531f3897688af636
+[2026-07-08T19:32:54.844Z] INFO: [GET] /api/v1/halls
+[2026-07-08T19:32:54.835Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T19:32:54.839Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:33:22.622Z] INFO: [PUT] /api/v1/showtimes/6a496b7ce2e1f93fa2024dee
+[2026-07-08T19:33:22.668Z] INFO: [Admin] Showtime updated: 6a496b7ce2e1f93fa2024dee
+[2026-07-08T19:33:22.691Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T19:33:22.699Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:33:22.706Z] INFO: [GET] /api/v1/halls
+[2026-07-08T19:33:39.538Z] INFO: [DELETE] /api/v1/showtimes/6a496bb0e2e1f93fa2024def
+[2026-07-08T19:33:39.582Z] INFO: [Admin] Showtime soft-deleted: 6a496bb0e2e1f93fa2024def
+[2026-07-08T19:33:39.607Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T19:33:39.621Z] INFO: [GET] /api/v1/halls
+[2026-07-08T19:33:39.615Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:33:43.778Z] INFO: [DELETE] /api/v1/showtimes/6a40de68531f3897688af638
+[2026-07-08T19:33:43.807Z] INFO: [Admin] Showtime soft-deleted: 6a40de68531f3897688af638
+[2026-07-08T19:33:43.832Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T19:33:43.840Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:33:43.849Z] INFO: [GET] /api/v1/halls
+[2026-07-08T19:33:46.651Z] INFO: [DELETE] /api/v1/showtimes/6a496bb0e2e1f93fa2024def
+[2026-07-08T19:33:46.661Z] INFO: [Admin] Showtime soft-deleted: 6a496bb0e2e1f93fa2024def
+[2026-07-08T19:33:46.692Z] INFO: [GET] /api/v1/halls
+[2026-07-08T19:33:46.680Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T19:33:46.685Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:34:17.114Z] INFO: [POST] /api/v1/showtimes
+[2026-07-08T19:34:17.182Z] INFO: [Admin] Showtime created: 6a4ea6399e1935bc19da5fd9 (14:21–16:00)
+[2026-07-08T19:34:17.204Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T19:34:17.216Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:34:17.246Z] INFO: [GET] /api/v1/halls
+[2026-07-08T19:34:28.639Z] INFO: [GET] /api/v1/bookings
+[2026-07-08T19:34:28.682Z] INFO: [GET] /api/v1/bookings
+[2026-07-08T19:34:30.636Z] INFO: [GET] /api/v1/halls
+[2026-07-08T19:34:30.651Z] INFO: [GET] /api/v1/halls
+[2026-07-08T19:34:41.709Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:34:41.728Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:35:52.306Z] INFO: [GET] /api/v1/movies
+[2026-07-08T19:35:52.904Z] INFO: [GET] /favicon.ico
+[2026-07-08T19:36:34.141Z] INFO: [GET] /api/v1/api-docs/
+[2026-07-08T19:36:40.701Z] INFO: [GET] /api/v1/
+[2026-07-08T19:36:58.914Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T19:36:58.919Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T19:37:08.612Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T19:37:08.772Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T19:37:08.845Z] INFO: [GET] /
+[2026-07-08T19:37:09.491Z] INFO: [GET] /favicon.ico
+[2026-07-08T19:37:20.935Z] INFO: [GET] /api-docs
+[2026-07-08T19:37:20.947Z] INFO: [GET] /api-docs/
+[2026-07-08T19:37:21.046Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T19:37:21.054Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T19:37:21.057Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T19:37:21.058Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T19:37:26.385Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-08T19:37:45.957Z] INFO: [GET] /api-docs/
+[2026-07-08T19:37:46.191Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T19:37:46.192Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T19:37:46.195Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T19:37:46.196Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T19:37:55.999Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-08T19:38:01.014Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-08T19:38:27.526Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/available-dates
+[2026-07-08T19:45:28.021Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes?date=2026-07-01
+[2026-07-08T19:45:34.754Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes?date=2026-07-09
+[2026-07-08T19:49:21.292Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes
+[2026-07-08T19:51:29.671Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes?date=2026-07-09
+[2026-07-08T20:14:01.246Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T20:14:01.240Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T20:14:16.360Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/available-dates
+[2026-07-08T20:14:16.417Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes?date=2026-07-09
+[2026-07-08T20:14:33.093Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes?date=2026-07-10
+[2026-07-08T20:14:36.014Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes?date=2026-07-09
+[2026-07-08T20:14:37.894Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes?date=2026-07-10
+[2026-07-08T20:14:39.932Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes?date=2026-07-09
+[2026-07-08T20:17:25.574Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e16/available-dates
+[2026-07-08T20:37:24.951Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T20:37:25.092Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T20:37:39.456Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/available-dates
+[2026-07-08T20:37:39.507Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes?date=2026-07-09
+[2026-07-08T20:42:32.184Z] INFO: [GET] /api/v1/movies?status=now_showing
+[2026-07-08T20:42:32.297Z] INFO: [GET] /api/v1/movies?status=coming_soon
+[2026-07-08T20:42:38.217Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e07/available-dates
+[2026-07-08T20:42:42.846Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/available-dates
+[2026-07-08T20:42:42.886Z] INFO: [GET] /api/v1/movies/6a4d9ca2398a137327b89e11/showtimes?date=2026-07-09
+[2026-07-08T20:51:28.745Z] INFO: [GET] /api/v1/showtimes/6a496b7ce2e1f93fa2024dee/seats
+[2026-07-08T20:52:14.045Z] INFO: [GET] /api/v1/halls
+[2026-07-08T20:52:14.080Z] INFO: [GET] /api/v1/halls
+[2026-07-08T20:56:02.774Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T20:56:03.247Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T20:56:22.775Z] INFO: [GET] /api/v1/halls
+[2026-07-08T20:58:51.240Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T20:58:51.260Z] INFO: [GET] /api/v1/halls
+[2026-07-08T20:58:51.248Z] INFO: [GET] /api/v1/movies
+[2026-07-08T20:58:51.313Z] INFO: [GET] /api/v1/movies
+[2026-07-08T20:58:51.340Z] INFO: [GET] /api/v1/halls
+[2026-07-08T20:58:51.345Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T20:59:01.867Z] INFO: [GET] /api/v1/halls
+[2026-07-08T20:59:01.879Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:02:40.619Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T21:02:40.623Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T21:02:40.675Z] INFO: MongoDB connected successfully
+[2026-07-08T21:02:45.077Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:02:45.109Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:02:45.129Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:02:45.227Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:02:45.238Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:02:45.281Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:02:52.098Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T21:02:52.101Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T21:02:52.153Z] INFO: MongoDB connected successfully
+[2026-07-08T21:03:38.508Z] INFO: [GET] /api-docs/
+[2026-07-08T21:03:38.614Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T21:03:38.616Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T21:03:38.625Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T21:03:38.630Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T21:03:39.373Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-08T21:03:44.957Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:06:29.700Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T21:06:29.704Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T21:06:29.764Z] INFO: MongoDB connected successfully
+[2026-07-08T21:06:37.510Z] INFO: [GET] /api-docs/
+[2026-07-08T21:06:37.597Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T21:06:37.606Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T21:06:37.612Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T21:06:37.617Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T21:06:38.361Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-08T21:06:40.635Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:07:50.425Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T21:07:50.429Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T21:07:50.480Z] INFO: MongoDB connected successfully
+[2026-07-08T21:07:58.858Z] INFO: [GET] /api-docs/
+[2026-07-08T21:07:58.943Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T21:07:58.945Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T21:07:58.953Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T21:07:58.956Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T21:07:59.878Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-08T21:08:02.710Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:08:10.277Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:08:17.858Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:08:37.856Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:09:18.618Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:09:18.632Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:09:34.824Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:09:34.877Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:09:46.987Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:09:47.005Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:09:47.018Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:09:47.069Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:09:47.074Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:09:47.109Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:09:54.275Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:09:54.289Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:10:11.761Z] INFO: [PUT] /api/v1/halls/undefined
+[2026-07-08T21:10:14.406Z] INFO: [PUT] /api/v1/halls/undefined
+[2026-07-08T21:10:27.645Z] INFO: [PUT] /api/v1/halls/undefined
+[2026-07-08T21:10:31.856Z] INFO: [PUT] /api/v1/halls/undefined
+[2026-07-08T21:10:47.554Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T21:10:47.557Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T21:10:47.600Z] INFO: MongoDB connected successfully
+[2026-07-08T21:16:09.541Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T21:16:09.544Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T21:16:09.581Z] INFO: MongoDB connected successfully
+[2026-07-08T21:16:25.344Z] INFO: [GET] /api-docs/
+[2026-07-08T21:16:25.489Z] INFO: [GET] /api-docs/swagger-ui.css
+[2026-07-08T21:16:25.494Z] INFO: [GET] /api-docs/swagger-ui-bundle.js
+[2026-07-08T21:16:25.495Z] INFO: [GET] /api-docs/swagger-ui-standalone-preset.js
+[2026-07-08T21:16:25.499Z] INFO: [GET] /api-docs/swagger-ui-init.js
+[2026-07-08T21:16:26.415Z] INFO: [GET] /api-docs/favicon-32x32.png
+[2026-07-08T21:16:34.838Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T21:16:35.281Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T21:17:01.709Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T21:17:01.712Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T21:17:01.763Z] INFO: MongoDB connected successfully
+[2026-07-08T21:17:25.665Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T21:17:35.194Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T21:17:35.624Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T21:17:35.779Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-08T21:17:35.791Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T21:17:35.825Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T21:17:35.832Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-08T21:17:41.396Z] INFO: [GET] /api/v1/bookings
+[2026-07-08T21:17:41.458Z] INFO: [GET] /api/v1/bookings
+[2026-07-08T21:17:42.574Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:17:42.616Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:17:43.694Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:17:43.722Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:17:43.733Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:17:43.728Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:17:43.771Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:17:43.785Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:17:48.433Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:17:48.444Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:17:53.347Z] INFO: [PUT] /api/v1/halls/undefined
+[2026-07-08T21:20:21.100Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:20:21.108Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T21:20:21.123Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:20:21.133Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T21:20:33.366Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:20:33.383Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:20:33.377Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:20:33.412Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:20:33.418Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:20:33.443Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:22:40.416Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:22:40.421Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:22:40.427Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:22:40.430Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T21:22:40.465Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:22:40.471Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:22:40.503Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T21:22:40.511Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:22:50.762Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:22:50.770Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:23:43.639Z] INFO: [PUT] /api/v1/halls/6a40d4a8531f3897688af61b
+[2026-07-08T21:23:45.653Z] INFO: [PUT] /api/v1/halls/6a40d4a8531f3897688af61b
+[2026-07-08T21:23:48.118Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:23:48.124Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:23:48.137Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:23:48.160Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:23:48.171Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:23:48.189Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:24:10.457Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:24:10.468Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:24:13.919Z] INFO: [PUT] /api/v1/halls/6a40d4a8531f3897688af61b
+[2026-07-08T21:24:13.975Z] INFO: [Admin] Hall updated: "Hall 1" (6a40d4a8531f3897688af61b)
+[2026-07-08T21:24:13.990Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:24:16.658Z] INFO: [PUT] /api/v1/halls/6a40d4a8531f3897688af61b
+[2026-07-08T21:24:16.680Z] INFO: [Admin] Hall updated: "Hall 1" (6a40d4a8531f3897688af61b)
+[2026-07-08T21:24:16.701Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:24:20.183Z] INFO: [PUT] /api/v1/halls/6a40d4a8531f3897688af61b
+[2026-07-08T21:24:32.887Z] INFO: [PUT] /api/v1/halls/6a4042734b73da86700de587
+[2026-07-08T21:24:37.613Z] INFO: [PUT] /api/v1/halls/6a4042734b73da86700de61f
+[2026-07-08T21:24:37.635Z] INFO: [Admin] Hall updated: "VIP Hall" (6a4042734b73da86700de61f)
+[2026-07-08T21:24:37.657Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:24:42.704Z] INFO: [PUT] /api/v1/halls/6a40d4a8531f3897688af61b
+[2026-07-08T21:24:42.728Z] INFO: [Admin] Hall updated: "Hall 1" (6a40d4a8531f3897688af61b)
+[2026-07-08T21:24:42.754Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:24:46.409Z] INFO: [PUT] /api/v1/halls/6a4042734b73da86700de587
+[2026-07-08T21:24:51.635Z] INFO: [PUT] /api/v1/halls/6a4042734b73da86700de61f
+[2026-07-08T21:24:51.655Z] INFO: [Admin] Hall updated: "VIP Hall" (6a4042734b73da86700de61f)
+[2026-07-08T21:24:51.669Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:25:00.123Z] INFO: [PUT] /api/v1/halls/6a4042734b73da86700de587
+[2026-07-08T21:25:05.363Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:25:05.371Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:25:05.382Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:25:05.406Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:25:05.419Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:25:05.434Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:27:02.766Z] INFO: [PUT] /api/v1/halls/6a40d4a8531f3897688af61b
+[2026-07-08T21:27:02.785Z] INFO: [Admin] Hall updated: "Hall 1" (6a40d4a8531f3897688af61b)
+[2026-07-08T21:27:42.944Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:27:42.952Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:27:42.960Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:27:42.972Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T21:27:43.014Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:27:43.007Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:27:43.046Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T21:27:43.040Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:27:43.930Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:27:43.940Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:27:50.574Z] INFO: [PUT] /api/v1/halls/6a4042734b73da86700de587
+[2026-07-08T21:27:50.614Z] INFO: [Admin] Hall updated: "Main Hall" (6a4042734b73da86700de587)
+[2026-07-08T21:27:50.639Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:27:54.151Z] INFO: [PUT] /api/v1/halls/6a4042734b73da86700de587
+[2026-07-08T21:27:54.183Z] INFO: [Admin] Hall updated: "Main Hall" (6a4042734b73da86700de587)
+[2026-07-08T21:27:54.200Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:27:58.066Z] INFO: [PUT] /api/v1/halls/6a40d4a8531f3897688af61b
+[2026-07-08T21:27:58.096Z] INFO: [Admin] Hall updated: "Hall 1" (6a40d4a8531f3897688af61b)
+[2026-07-08T21:27:58.122Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:28:01.021Z] INFO: [PUT] /api/v1/halls/6a4042734b73da86700de61f
+[2026-07-08T21:28:01.041Z] INFO: [Admin] Hall updated: "VIP Hall" (6a4042734b73da86700de61f)
+[2026-07-08T21:28:01.050Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:28:02.707Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:28:02.718Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:28:02.723Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:28:02.733Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:28:02.777Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:28:02.800Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:28:11.860Z] INFO: [PUT] /api/v1/showtimes/6a496b7ce2e1f93fa2024dee
+[2026-07-08T21:28:11.917Z] INFO: [Admin] Showtime updated: 6a496b7ce2e1f93fa2024dee
+[2026-07-08T21:28:11.951Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:28:11.958Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:28:11.964Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:28:17.995Z] INFO: [PUT] /api/v1/showtimes/6a40d578531f3897688af636
+[2026-07-08T21:28:18.049Z] INFO: [Admin] Showtime updated: 6a40d578531f3897688af636
+[2026-07-08T21:28:18.081Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:32:23.545Z] INFO: Swagger Docs available at http://localhost:3000/api-docs
+[2026-07-08T21:32:23.541Z] INFO: Server is running on port 3000 in development mode
+[2026-07-08T21:32:23.602Z] INFO: MongoDB connected successfully
+[2026-07-08T21:32:23.796Z] INFO: [POST] /api/v1/auth/login
+[2026-07-08T21:32:24.250Z] INFO: User logged in successfully: ahmed@example.com
+[2026-07-08T21:32:24.330Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-08T21:32:24.343Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T21:32:24.376Z] INFO: [GET] /api/v1/dashboard/statistics
+[2026-07-08T21:32:24.386Z] INFO: [GET] /api/v1/auth/me
+[2026-07-08T21:32:29.718Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:32:29.725Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:32:29.742Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:32:29.806Z] INFO: [GET] /api/v1/movies
+[2026-07-08T21:32:29.826Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:32:29.843Z] INFO: [GET] /api/v1/showtimes
+[2026-07-08T21:32:34.728Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:32:34.761Z] INFO: [GET] /api/v1/halls
+[2026-07-08T21:32:41.580Z] INFO: [GET] /api/v1/movies?page=1&limit=10&sort=releaseDate%3Adesc
+[2026-07-08T21:32:59.881Z] INFO: [GET] /api/v1/showtimes/665f1a2b3c4d5e6f70000040/seats
+[2026-07-08T21:33:07.576Z] INFO: [GET] /api/v1/halls

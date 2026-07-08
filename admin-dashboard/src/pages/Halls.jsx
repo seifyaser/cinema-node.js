@@ -34,7 +34,7 @@ const Halls = () => {
     setEditingHall(hall);
     setFormData({
       name: hall.name,
-      screenType: hall.screenType || 'standard',
+      screenType: hall.screenType?.key || hall.screenType || 'standard',
       totalRows: hall.totalRows,
       totalColumns: hall.totalColumns,
       isActive: hall.isActive
@@ -46,14 +46,13 @@ const Halls = () => {
     e.preventDefault();
     try {
       if (editingHall) {
-        await api.put(`/halls/${editingHall._id}`, {
-          name: formData.name,
+        await api.put(`/halls/${editingHall.id || editingHall._id}`, {
           screenType: formData.screenType,
           isActive: formData.isActive
         });
       } else {
         await api.post('/halls', {
-          name: formData.name,
+          name: `${formData.screenType}-${Date.now()}`,
           screenType: formData.screenType,
           totalRows: parseInt(formData.totalRows, 10),
           totalColumns: parseInt(formData.totalColumns, 10)
@@ -80,7 +79,7 @@ const Halls = () => {
         <table className="table">
           <thead>
             <tr>
-              <th>Name</th>
+              <th>Type</th>
               <th>Capacity</th>
               <th>Status</th>
               <th>Actions</th>
@@ -88,9 +87,9 @@ const Halls = () => {
           </thead>
           <tbody>
             {halls.map((hall) => (
-              <tr key={hall._id}>
-                <td style={{ fontWeight: 500 }}>{hall.name}</td>
-                <td>{hall.capacity} seats</td>
+              <tr key={hall.id || hall._id}>
+                <td style={{ fontWeight: 500 }}>{hall.screenType?.displayName || hall.displayName || hall.name}</td>
+                <td>{hall.totalSeats || hall.capacity} seats</td>
                 <td>
                   <span className={`badge ${hall.isActive ? 'badge-success' : 'badge-warning'}`}>
                     {hall.isActive ? 'Active' : 'Inactive'}
@@ -113,12 +112,7 @@ const Halls = () => {
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title={editingHall ? "Edit Hall" : "Add Hall"}>
         <form onSubmit={handleSubmit} className="flex-col gap-4">
           <div className="input-group">
-            <label className="input-label">Hall Name</label>
-            <input type="text" className="input-field" required value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
-          </div>
-          
-          <div className="input-group">
-            <label className="input-label">Screen Type</label>
+            <label className="input-label">Hall Type</label>
             <select className="input-field" value={formData.screenType} onChange={e => setFormData({...formData, screenType: e.target.value})}>
               <option value="standard">Standard</option>
               <option value="imax">IMAX</option>

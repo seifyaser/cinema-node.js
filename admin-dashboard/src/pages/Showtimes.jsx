@@ -132,7 +132,7 @@ const Showtimes = () => {
             {showtimes.map((st) => (
               <tr key={st._id}>
                 <td style={{ fontWeight: 500 }}>{st.movie?.title || 'Unknown'}</td>
-                <td>{st.hall?.name || 'Unknown'}</td>
+                <td>{st.hall?.screenType?.displayName || st.hall?.screenType?.toUpperCase() || st.hall?.name || 'Unknown'}</td>
                 <td>{new Date(st.date).toLocaleDateString()}</td>
                 <td>{st.startTime} - {st.endTime}</td>
                 <td>${st.ticketPrice}</td>
@@ -170,7 +170,7 @@ const Showtimes = () => {
           <div className="input-group">
             <label className="input-label">Hall</label>
             <select className="input-field" required value={formData.hall} onChange={e => setFormData({...formData, hall: e.target.value})}>
-              {halls.map(h => <option key={h._id} value={h._id}>{h.name}</option>)}
+              {halls.map(h => <option key={h.id || h._id} value={h.id || h._id}>{h.screenType?.displayName || h.displayName || h.name}</option>)}
             </select>
           </div>
 

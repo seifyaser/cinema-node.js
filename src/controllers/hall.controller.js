@@ -11,7 +11,49 @@ const createHall = asyncHandler(async (req, res) => {
 
 const getAllHalls = asyncHandler(async (req, res) => {
   const halls = await hallService.getAllHalls();
-  return success(res, 'Halls fetched successfully', { halls, total: halls.length });
+
+  const screenTypeDetails = {
+    standard: {
+      key: 'standard',
+      displayName: 'Standard',
+      icon: '🎬',
+      description:
+        'Enjoy a classic cinema experience with a standard-sized screen, immersive surround sound, and comfortable seating. Perfect for everyday movie watching at the most affordable price.',
+    },
+    vip: {
+      key: 'vip',
+      displayName: 'VIP',
+      icon: '👑',
+      description:
+        'Experience premium comfort with spacious reclining leather seats, extra legroom, and an exclusive atmosphere. Selected locations may also offer in-seat food and beverage service for a luxurious movie experience.',
+    },
+    imax: {
+      key: 'imax',
+      displayName: 'IMAX',
+      icon: '🎥',
+      description:
+        'Immerse yourself in breathtaking visuals with a giant screen, crystal-clear image quality, and powerful IMAX surround sound. Ideal for action-packed blockbusters and films designed for the ultimate cinematic experience.',
+    },
+  };
+
+  const formattedHalls = halls.map((h) => {
+    const hall = h.toJSON ? h.toJSON() : h;
+    const stKey = hall.screenType ? hall.screenType.toLowerCase() : 'standard';
+    return {
+      id: hall.id || hall._id,
+      displayName: hall.name,
+      screenType: screenTypeDetails[stKey] || screenTypeDetails.standard,
+      totalRows: hall.totalRows,
+      totalColumns: hall.totalColumns,
+      totalSeats: hall.totalSeats,
+      isActive: hall.isActive,
+    };
+  });
+
+  return success(res, 'Halls fetched successfully', {
+    total: formattedHalls.length,
+    halls: formattedHalls,
+  });
 });
 
 const getHallById = asyncHandler(async (req, res) => {

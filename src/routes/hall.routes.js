@@ -8,14 +8,35 @@ const ROLES = require('../constants/roles');
 
 const router = express.Router();
 
-// All hall routes require admin — aligned with Phase 0 blueprint
-router.use(authMiddleware, roleMiddleware(ROLES.ADMIN));
+// ─── Public Routes ─────────────────────────────────────────────────────────
 
-router.post('/', validate(hallValidation.createHall), hallController.createHall);
 router.get('/', hallController.getAllHalls);
 router.get('/:id', hallController.getHallById);
-router.put('/:id', validate(hallValidation.updateHall), hallController.updateHall);
-router.delete('/:id', hallController.deleteHall);
 router.get('/:id/seats', hallController.getHallSeats);
+
+// ─── Admin Routes ──────────────────────────────────────────────────────────
+
+router.post(
+  '/',
+  authMiddleware,
+  roleMiddleware(ROLES.ADMIN),
+  validate(hallValidation.createHall),
+  hallController.createHall
+);
+
+router.put(
+  '/:id',
+  authMiddleware,
+  roleMiddleware(ROLES.ADMIN),
+  validate(hallValidation.updateHall),
+  hallController.updateHall
+);
+
+router.delete(
+  '/:id',
+  authMiddleware,
+  roleMiddleware(ROLES.ADMIN),
+  hallController.deleteHall
+);
 
 module.exports = router;
