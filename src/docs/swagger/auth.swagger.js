@@ -153,3 +153,26 @@
  *       "401":
  *         description: Not authenticated — missing or invalid token
  */
+
+/**
+ * @swagger
+ * /auth/logout:
+ *   post:
+ *     summary: Logout user
+ *     description: Invalidates the current user's token by adding it to a blocklist.
+ *     tags: [Authentication]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       "200":
+ *         description: Logout successful
+ *         content:
+ *           application/json:
+ *             example:
+ *               success: true
+ *               message: Logout successful
+ *               data: null
+ *       "401":
+ *         description: Not authenticated — missing or invalid token, or token already revoked
+ */
+

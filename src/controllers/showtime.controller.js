@@ -35,6 +35,50 @@ const getAvailableDates = asyncHandler(async (req, res) => {
   return success(res, 'Available dates fetched successfully', { dates, total: dates.length });
 });
 
+const getAvailableHalls = asyncHandler(async (req, res) => {
+  const halls = await showtimeService.getAvailableHalls(req.params.movieId, req.query.date);
+
+  const screenTypeDetails = {
+    standard: {
+      key: 'standard',
+      displayName: 'Standard',
+      icon: '🎬',
+      description:
+        'Enjoy a classic cinema experience with a standard-sized screen, immersive surround sound, and comfortable seating. Perfect for everyday movie watching at the most affordable price.',
+    },
+    vip: {
+      key: 'vip',
+      displayName: 'VIP',
+      icon: '👑',
+      description:
+        'Experience premium comfort with spacious reclining leather seats, extra legroom, and an exclusive atmosphere. Selected locations may also offer in-seat food and beverage service for a luxurious movie experience.',
+    },
+    imax: {
+      key: 'imax',
+      displayName: 'IMAX',
+      icon: '🎥',
+      description:
+        'Immerse yourself in breathtaking visuals with a giant screen, crystal-clear image quality, and powerful IMAX surround sound. Ideal for action-packed blockbusters and films designed for the ultimate cinematic experience.',
+    },
+  };
+
+  const formattedHalls = halls.map((hall) => {
+    const stKey = hall.screenType ? hall.screenType.toLowerCase() : 'standard';
+    return {
+      _id: hall._id,
+      id: hall._id,
+      displayName: hall.name,
+      screenType: screenTypeDetails[stKey] || screenTypeDetails.standard,
+      totalRows: hall.totalRows,
+      totalColumns: hall.totalColumns,
+      totalSeats: hall.totalSeats,
+      isActive: hall.isActive,
+    };
+  });
+
+  return success(res, 'Available halls fetched successfully', { halls: formattedHalls, total: formattedHalls.length });
+});
+
 const getShowtimesByMovie = asyncHandler(async (req, res) => {
   const showtimes = await showtimeService.getShowtimesByMovieAndDate(
     req.params.movieId,
@@ -54,6 +98,7 @@ module.exports = {
   deleteShowtime,
   getAllShowtimes,
   getAvailableDates,
+  getAvailableHalls,
   getShowtimesByMovie,
   getShowtimeById,
 };

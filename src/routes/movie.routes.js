@@ -29,6 +29,7 @@ router.get(
 // Declared BEFORE /:id to prevent Express treating path segments as movie IDs
 
 router.get('/:movieId/available-dates', showtimeController.getAvailableDates);
+router.get('/:movieId/available-halls', showtimeController.getAvailableHalls);
 
 router.get(
   '/:movieId/showtimes',

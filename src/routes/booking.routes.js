@@ -17,6 +17,8 @@ router.post(
   bookingController.holdSeats
 );
 
+router.get('/my-bookings', bookingController.getMyBookings);
+
 router.get(
   '/',
   roleMiddleware(ROLES.ADMIN),

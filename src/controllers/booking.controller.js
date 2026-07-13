@@ -38,9 +38,15 @@ const getAllBookings = asyncHandler(async (req, res) => {
   return success(res, 'All bookings fetched successfully', { bookings, total: bookings.length });
 });
 
+const getMyBookings = asyncHandler(async (req, res) => {
+  const bookings = await bookingService.getMyBookings(req.user._id);
+  return success(res, 'My bookings fetched successfully', { bookings, total: bookings.length });
+});
+
 module.exports = {
   getSeatMap,
   holdSeats,
   getBookingSummary,
   getAllBookings,
+  getMyBookings,
 };

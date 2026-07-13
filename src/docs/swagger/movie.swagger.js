@@ -126,6 +126,60 @@
 
 /**
  * @swagger
+ * /movies/{movieId}/available-halls:
+ *   get:
+ *     summary: Get all available halls for a movie
+ *     description: |
+ *       Returns a list of unique halls that have active, future showtimes for the specified movie.
+ *       - Only active movies are considered
+ *       - Past showtimes are excluded
+ *     tags: [Movies (Public)]
+ *     security: []
+ *     parameters:
+ *       - in: path
+ *         name: movieId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Movie ID
+ *         example: "665f1a2b3c4d5e6f70000010"
+ *       - in: query
+ *         name: date
+ *         required: false
+ *         schema:
+ *           type: string
+ *           format: date
+ *         description: Optional date (YYYY-MM-DD) to filter available halls
+ *         example: "2026-07-01"
+ *     responses:
+ *       "200":
+ *         description: Available halls fetched successfully
+ *         content:
+ *           application/json:
+ *             example:
+ *               success: true
+ *               message: Available halls fetched successfully
+ *               data:
+ *                 total: 1
+ *                 halls:
+ *                   - _id: "6a40d4a8531f3897688af61b"
+ *                     id: "6a40d4a8531f3897688af61b"
+ *                     displayName: "standard-1683491234"
+ *                     screenType: 
+ *                       key: "standard"
+ *                       displayName: "Standard"
+ *                       icon: "🎬"
+ *                       description: "Enjoy a classic cinema experience..."
+ *                     totalRows: 10
+ *                     totalColumns: 15
+ *                     totalSeats: 150
+ *                     isActive: true
+ *       "404":
+ *         description: Movie not found
+ */
+
+/**
+ * @swagger
  * /movies/{id}:
  *   get:
  *     summary: Get movie details by ID

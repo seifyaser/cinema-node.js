@@ -1,6 +1,7 @@
 const { verifyToken } = require('../utils/tokenHelper');
 const { error } = require('../utils/apiResponse');
 const User = require('../models/User');
+const TokenBlocklist = require('../models/TokenBlocklist');
 
 const authMiddleware = async (req, res, next) => {
   let token;
@@ -14,6 +15,11 @@ const authMiddleware = async (req, res, next) => {
   }
 
   try {
+    const isBlocked = await TokenBlocklist.exists({ token });
+    if (isBlocked) {
+      return error(res, 'Token has been revoked. Please log in again.', null, 401);
+    }
+
     const decoded = verifyToken(token);
 
     const currentUser = await User.findById(decoded.id);
@@ -26,6 +32,8 @@ const authMiddleware = async (req, res, next) => {
     }
 
     req.user = currentUser;
+    req.token = token;
+    req.tokenExp = decoded.exp;
     next();
   } catch (err) {
     next(err);

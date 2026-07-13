@@ -86,6 +86,22 @@ const holdSeats = async (userId, showtimeId, seatIds) => {
     );
   }
 
+  const now = new Date();
+
+  // Check if user already has an active pending booking
+  const activeBooking = await Booking.findOne({
+    user: userId,
+    status: BOOKING_STATUS.PENDING,
+    expiresAt: { $gt: now },
+  });
+
+  if (activeBooking) {
+    throw new ApiError(
+      400,
+      'You already have a pending booking. Please complete the payment or wait for the hold to expire before booking again.'
+    );
+  }
+
   // Validate showtime
   const showtime = await Showtime.findOne({ _id: showtimeId, isActive: true })
     .populate('movie', 'title poster duration')
@@ -107,7 +123,6 @@ const holdSeats = async (userId, showtimeId, seatIds) => {
   }
 
   // Check for already held or reserved seats (ignore expired holds)
-  const now = new Date();
   const conflicting = await BookingSeat.find({
     showtime: showtimeId,
     seat: { $in: seatIds },
@@ -260,8 +275,35 @@ const getBookingSummary = async (bookingId, userId) => {
   };
 };
 
+/**
+ * Get all bookings for a specific user
+ */
+const getMyBookings = async (userId) => {
+  const bookings = await Booking.find({ user: userId })
+    .populate({
+      path: 'showtime',
+      populate: [
+        { path: 'movie', select: 'title poster duration genre ageRating' },
+        { path: 'hall', select: 'name screenType' },
+      ],
+    })
+    .sort({ createdAt: -1 })
+    .lean();
+
+  const now = new Date();
+
+  return bookings.map((booking) => {
+    const isExpired = booking.status === BOOKING_STATUS.PENDING && booking.expiresAt < now;
+    return {
+      ...booking,
+      status: isExpired ? BOOKING_STATUS.EXPIRED : booking.status,
+    };
+  });
+};
+
 module.exports = {
   getSeatMap,
   holdSeats,
   getBookingSummary,
+  getMyBookings,
 };

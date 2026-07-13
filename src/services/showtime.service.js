@@ -220,6 +220,56 @@ const getAvailableDates = async (movieId) => {
 };
 
 /**
+ * Get all available halls for a movie that have future showtimes.
+ * If a date is provided, filters for halls available on that specific date.
+ * Returns an array of unique populated hall objects.
+ */
+const getAvailableHalls = async (movieId, date = null) => {
+  await validateMovie(movieId);
+
+  const filter = {
+    movie: movieId,
+    isActive: true,
+  };
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  if (date) {
+    filter.date = date; // Let Mongoose cast the YYYY-MM-DD string to match the DB exactly
+  } else {
+    filter.date = { $gte: today };
+  }
+
+  const now = new Date();
+  const currentTime = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
+  const showtimes = await Showtime.find(filter)
+    .populate('hall', 'name screenType totalRows totalColumns')
+    .lean();
+
+  const todayStr = today.toISOString().split('T')[0];
+  const uniqueHallsMap = new Map();
+
+  for (const st of showtimes) {
+    const dateStr = new Date(st.date).toISOString().split('T')[0];
+    
+    if (dateStr === todayStr && st.startTime <= currentTime) {
+      continue; // Skip expired showtimes for today
+    }
+
+    if (st.hall && !uniqueHallsMap.has(st.hall._id.toString())) {
+      uniqueHallsMap.set(st.hall._id.toString(), {
+        ...st.hall,
+        totalSeats: st.hall.totalRows * st.hall.totalColumns,
+      });
+    }
+  }
+
+  return Array.from(uniqueHallsMap.values());
+};
+
+/**
  * Get all available showtimes for a movie on a specific date.
  * - If date is today, return only future showtimes.
  * - Returns populated showtimes sorted by startTime.
@@ -297,6 +347,7 @@ module.exports = {
   deleteShowtime,
   getAllShowtimes,
   getAvailableDates,
+  getAvailableHalls,
   getShowtimesByMovieAndDate,
   getShowtimeById,
 };

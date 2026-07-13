@@ -75,6 +75,39 @@
  *         description: Showtime not found
  *       "409":
  *         description: One or more seats are already held or reserved
+ *       "500":
+ *         description: Server Error
+ * 
+ * /bookings/my-bookings:
+ *   get:
+ *     summary: Get user's booking history
+ *     description: Returns all bookings/tickets for the currently authenticated user
+ *     tags: [Booking (User)]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       "200":
+ *         description: Successfully fetched user's bookings
+ *         content:
+ *           application/json:
+ *             example:
+ *               success: true
+ *               message: My bookings fetched successfully
+ *               data:
+ *                 total: 1
+ *                 bookings:
+ *                   - _id: 6a4f5b...
+ *                     showtime:
+ *                       movie:
+ *                         title: "Inception"
+ *                       hall:
+ *                         name: "Hall 1"
+ *                     totalSeats: 2
+ *                     totalPrice: 36
+ *                     status: "confirmed"
+ *                     createdAt: "2026-07-09T00:00:00Z"
+ *       "401":
+ *         description: Unauthorized
  */
 
 /**

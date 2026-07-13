@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import api from '../utils/api';
 import Modal from '../components/Modal';
+import { Trash2, Edit } from 'lucide-react';
 
 const Halls = () => {
   const [halls, setHalls] = useState([]);
@@ -21,6 +22,17 @@ const Halls = () => {
       console.error(err);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleDelete = async (id) => {
+    if (!window.confirm('Are you sure you want to delete this hall? This action might fail if there are active bookings associated with it.')) return;
+    try {
+      await api.delete(`/halls/${id}`);
+      fetchHalls();
+    } catch (err) {
+      console.error(err);
+      alert(err.response?.data?.message || 'Failed to delete hall');
     }
   };
 
@@ -96,7 +108,14 @@ const Halls = () => {
                   </span>
                 </td>
                 <td>
-                  <button className="btn btn-secondary p-2" onClick={() => openEditModal(hall)}>Edit</button>
+                  <div className="flex gap-2">
+                    <button className="btn btn-secondary p-2" title="Edit" onClick={() => openEditModal(hall)}>
+                      <Edit size={16} />
+                    </button>
+                    <button className="btn btn-danger p-2" title="Delete" onClick={() => handleDelete(hall.id || hall._id)}>
+                      <Trash2 size={16} />
+                    </button>
+                  </div>
                 </td>
               </tr>
             ))}
